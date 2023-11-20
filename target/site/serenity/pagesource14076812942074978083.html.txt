@@ -1,0 +1,923 @@
+<html lang="es-ES" class="pro theme-azure-light"><head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="username" content="admin">
+<link rel="home" id="ApplicationPath" href="/">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link href="/DynJS.axd/CssBundle.Base.css?v=X9gDr_ZVCrabLqEOXRF9TA" rel="stylesheet" type="text/css">
+
+    <link href="/DynJS.axd/CssBundle.Site.css?v=Z_puvZFNfDx-YP37iPTI4w" rel="stylesheet" type="text/css">
+
+<script type="application/json" id="ScriptCulture">{"DateOrder":"dmy","DateFormat":"dd/MM/yyyy","DateSeparator":"/","DateTimeFormat":"dd/MM/yyyy HH:mm:ss","DecimalSeparator":",","GroupSeparator":"."}</script>
+    <script src="/DynJS.axd/Bundle.Base.js?v=vNCxz694JZcOH4qMdmpOmw" type="text/javascript"></script>
+
+    <script src="/DynJS.axd/Bundle.Site.js?v=NmHvhiqm6CuSIq1AJxVigA" type="text/javascript"></script>
+
+    <script src="/DynJS.axd/LocalText.Site.es-ES.Public.js?v=zszQw3FfvRnXA2sO9j7XAQ" type="text/javascript"></script>
+
+<script type="module" src="/esm/Modules/Common/ScriptInit.js?v=sT88pstmmf0MuPgo_wVosw"></script>
+<script type="text/javascript">Q.ScriptData.set('Lookup.Administration.Language', new Q.Lookup({"idField":"LanguageId","textField":"LanguageName"}, 
+[{"Id":6,"LanguageId":"zh-CN","LanguageName":"Chinese (Simplified)"},{"Id":1,"LanguageId":"en","LanguageName":"English"},{"Id":10,"LanguageId":"fa","LanguageName":"Farsi"},{"Id":5,"LanguageId":"de","LanguageName":"German"},{"Id":7,"LanguageId":"it","LanguageName":"Italian"},{"Id":8,"LanguageId":"pt","LanguageName":"Portuguese"},{"Id":9,"LanguageId":"pt-BR","LanguageName":"Portuguese (Brazil)"},{"Id":2,"LanguageId":"ru","LanguageName":"Russian"},{"Id":3,"LanguageId":"es","LanguageName":"Spanish"},{"Id":4,"LanguageId":"tr","LanguageName":"Turkish"},{"Id":11,"LanguageId":"vi-VN","LanguageName":"Vietnamese (Vietnam)"}]
+));</script>
+<script type="application/json" id="RegisteredScripts">{"Form.AdvancedSamples.MultiDatesPicker":"638098594806831650","Lookup.Northwind.Supplier":"JohzrWfNo0QsmwGfw7TKcw","Bundle.Base":"vNCxz694JZcOH4qMdmpOmw","Form.Membership.ForgotPassword":"638098594806831730","Columns.BasicSamples.InlineImageInGrid":"638098594806831745","Columns.Serenity.Pro.Meeting.Columns.MeetingAgendaColumns":"638098594806831753","Form.Serenity.Pro.Organization.Forms.BusinessUnitForm":"638098594806831771","Form.AdvancedSamples.EnumFlagsForm":"638098594806831780","Columns.Northwind.Territory":"638098594806831793","Lookup.WorkLog.Invoice":"638098594806831804","Lookup.Distinct.Serenity.Pro.DataAuditLog.DataAuditLog.Tablename":"638098594806831816","Lookup.WorkLog.Project":"638098594806831825","Lookup.Serenity.Pro.Meeting.MeetingAgendaType":"638098594806831839","Form.Northwind.Shipper":"638098594806831847","Form.Serenity.Pro.Meeting.Forms.MeetingAgendaRelevantForm":"638098594806831855","Lookup.WorkLog.Currency":"638098594806831865","Columns.Serenity.Pro.Meeting.Columns.MeetingLocationColumns":"638098594806831876","Lookup.Northwind.Customer":"bNveuCTbu5QGZ6flIvz9nQ","Columns.WorkLog.Currency":"638098594806831936","Lookup.Northwind.Shipper":"YiNdQd8_0PL4hf-7NRfgUA","Columns.Northwind.Shipper":"638098594806831984","Lookup.Northwind.Category":"ARf_gzKlacidyGakML5PgA","RemoteData.Administration.ImplicitPermissions":"638098594806832033","Form.Membership.ResetPassword":"638098594806832039","Form.Serenity.Pro.Meeting.MeetingForm":"638098594806832047","Form.BasicSamples.HarcodedValues":"638098594806832054","Columns.WorkLog.EmployeePricing":"638098594806832061","Columns.Serenity.Pro.EmailQueue.EmailQueueColumns":"638098594806832075","Form.Northwind.Customer":"638098594806832083","Form.BasicSamples.ChangingLookupText":"638098594806832089","Columns.Serenity.Pro.Organization.Columns.ContactColumns":"638098594806832097","Columns.Administration.Role":"638098594806832103","Columns.Serenity.Pro.Meeting.Columns.MeetingAttendeeColumns":"638098594806832110","LocalText.Site.es-ES.Public":"zszQw3FfvRnXA2sO9j7XAQ","Lookup.Northwind.Employee":"8H1Y2Ngv5BTmQ93CFbbZAQ","Columns.Serenity.Pro.Organization.Columns.BusinessUnitColumns":"638098594806832159","ColumnsBundle":"72h3kA9KRytQVgmW5VL_Fg","Lookup.Administration.User":"638098594806832181","Form.Serenity.Pro.Meeting.Forms.MeetingTypeForm":"638098594806832194","Columns.Northwind.Customer":"638098594806832202","Columns.Northwind.Category":"638098594806832209","Lookup.WorkLog.Customer":"638098594806832220","Columns.Serenity.Pro.Meeting.Columns.MeetingTypeColumns":"638098594806832225","Form.Serenity.Pro.Meeting.Forms.MeetingDecisionRelevantForm":"638098594806832232","Form.BasicSamples.StaticTextBlock":"638098594806832237","CssBundle.Site":"Z_puvZFNfDx-YP37iPTI4w","Form.Serenity.Pro.Organization.Forms.ContactForm":"638098594806832247","ColumnAndFormBundle":"qeQkJHr0oCxHNyz4wsKsMQ","Form.WorkLog.Currency":"638098594806832267","Form.Serenity.Pro.Meeting.Forms.MeetingAgendaTypeForm":"638098594806832272","Form.Membership.Login":"638098594806832279","Form.Administration.User":"638098594806832285","Form.Serenity.Pro.Meeting.Forms.MeetingDecisionForm":"638098594806832292","Columns.Northwind.Region":"638098594806832307","TemplateBundle":"638098594806832316","Lookup.Administration.Language":"1NBab_dUqgi31AY3w2h6Ow","Form.AdvancedSamples.OrderWizard":"638098594806832336","Lookup.Northwind.CustomerCity":"H00QDrcxCRRGHzEE6x_eJQ","Form.AdvancedSamples.GoogleMapsForm":"638098594806832367","Columns.Default.Customer":"638098594806832372","Form.Serenity.Pro.Meeting.Forms.MeetingLocationForm":"638098594806832377","Lookup.Distinct.WorkLog.WorkLog.Year":"638098594806832389","Lookup.Northwind.OrderShipCity":"QKaFx7izCLMy7GgrTZXDTA","Columns.WorkLog.Invoice":"638098594806832416","Form.WorkLog.Project":"638098594806832422","Form.WorkLog.EmployeePricing":"638098594806832429","RemoteData.Administration.PermissionKeys":"638098594806832439","Lookup.WorkLog.Employee":"638098594806832449","RemoteData.LocalText":"-26632760","Lookup.Northwind.Territory":"0GMMSXIISRHpu-MTEvLPiQ","Form.Northwind.Territory":"638098594806832556","CssBundle.Base.rtl":"638098594806832565","Lookup.Northwind.Product":"Jfc2HwfVzYltLgT9Yu_YWg","Form.AdvancedSamples.ProductExcelImport":"638098594806832616","Form.Northwind.Region":"638098594806832622","Columns.Serenity.Pro.Meeting.Columns.MeetingAgendaRelevantColumns":"638098594806832626","Columns.AdvancedSamples.CustomerGrossSales":"638098594806832632","Lookup.Northwind.Region":"iLtnOIlpBy8MUjuj2zR9Dg","Columns.Northwind.OrderDetail":"638098594806832667","Form.AdvancedSamples.DragDropSample":"638098594806832672","Bundle.CKEditor":"4-nHHfSyatvEAFxndNCoyQ","Columns.Northwind.Order":"638098594806832690","Form.Membership.SignUp":"638098594806832697","Form.Serenity.Pro.Meeting.Forms.MeetingAttendeeForm":"638098594806832703","Lookup.Serenity.Pro.Meeting.MeetingLocation":"mso0Ik4jJvxtv21e3bMp4Q","Lookup.Serenity.Pro.Meeting.MeetingType":"eoIJ3heR7p-VnfJLlmgyoA","Form.Serenity.Pro.DataAuditLog.DataAuditLogForm":"638098594806832788","Columns.Administration.Language":"638098594806832794","Form.AdvancedSamples.PickerOrder":"638098594806832798","Template.Administration.SergenPanel":"638098594806832808","Form.Northwind.Order":"638098594806832824","Columns.WorkLog.Employee":"638098594806832842","Form.Default.Customer":"638098594806832849","LocalText.Site.en-US.Public":"LLjqsEtoCgFDB0RmiPH3Qg","Lookup.Northwind.CustomerCountry":"fzyYe_rinntCcIYK5czKwg","Columns.Northwind.Supplier":"638098594806832882","Form.Administration.Language":"638098594806832890","Form.BasicSamples.LookupFilterByMultiple":"638098594806832896","Columns.Serenity.Pro.Meeting.Columns.MeetingDecisionColumns":"638098594806832902","Form.Membership.ChangePassword":"638098594806832908","Columns.WorkLog.Project":"638098594806832912","Form.Serenity.Pro.Meeting.Forms.MeetingAgendaForm":"638098594806832917","Lookup.Distinct.Serenity.Pro.DataAuditLog.DataAuditLog.FieldName":"638098594806832924","Columns.WorkLog.WorkLog":"638098594806832929","Form.Serenity.Pro.EmailQueue.EmailQueueForm":"638098594806832936","Form.WorkLog.WorkLog":"638098594806832943","Columns.Serenity.Pro.Meeting.Columns.MeetingAgendaTypeColumns":"638098594806832949","Form.BasicSamples.FilteredLookupInDetail":"638098594806832954","Lookup.Serenity.Pro.Organization.Contact":"xWf1JP5UjSWNZLQVnojfsg","FormBundle":"QN47UTrxaVEXTf4kXdCscA","Form.Serenity.Pro.EmailClient.EmailCompose":"638098594806833005","Form.Northwind.OrderDetail":"638098594806833010","Form.BasicSamples.PopulateLinkedData":"638098594806833015","Bundle.Site":"NmHvhiqm6CuSIq1AJxVigA","Form.Administration.Role":"638098594806833025","Lookup.Distinct.WorkLog.WorkLog.Month":"638098594806833031","Lookup.Northwind.OrderShipCountry":"zj9rB1F3ikVykVcCXk-k_g","Bundle.NorthwindLookups":"U7bZCVAEoYRJXR4UdbzvCw","Form.Northwind.Product":"638098594806833069","CssBundle.Base":"X9gDr_ZVCrabLqEOXRF9TA","Columns.Serenity.Pro.DataAuditLog.DataAuditLogColumns":"638098594806833080","Lookup.Northwind.SupplierCountry":"638098594806833091","Columns.AdvancedSamples.DragDropSample":"638098594806833097","Columns.Northwind.Product":"638098594806833103","Lookup.Administration.Role":"638098594806833111","RemoteData.UserData":"638098594806833121","Lookup.WorkLog.Tasks":"638098594806833131","Columns.Northwind.SalesByCategory":"638098594806833137","Columns.Serenity.Pro.Meeting.MeetingColumns":"638098594806833142","CssBundle.Pages/Dashboard":"5PDR87T2oXiJ7tQKoL0HEQ","Form.WorkLog.Invoice":"638098594806833173","Form.AdvancedSamples.InlineButtons":"638098594806833179","Form.WorkLog.Employee":"638098594806833184","Columns.Serenity.Pro.Meeting.Columns.MeetingDecisionRelevantColumns":"638098594806833188","Lookup.Serenity.Pro.Organization.BusinessUnit":"5MH5-9hexE-hz1uyx1urVA","Form.Northwind.Category":"638098594806833232","Form.Northwind.Supplier":"638098594806833237","Columns.Administration.User":"638098594806833243"}</script>
+    
+    <title>Business Units - StartSharp</title>
+<style data-uid="sleekgrid_271367">.sleekgrid_271367 { --slick-cell-height: 36px; } .sleekgrid_271367 .slick-group-header-column { left: 1000px; } .sleekgrid_271367 .slick-header-column { left: 1000px; } .sleekgrid_271367 .slick-top-panel { height:30px; } .sleekgrid_271367 .slick-grouping-panel { height:30px; } .sleekgrid_271367 .slick-headerrow-columns { height:34px; } .sleekgrid_271367 .slick-cell { height:36px; } .sleekgrid_271367 .slick-row { height:36px; } .sleekgrid_271367 .slick-footerrow-columns { height:30px; } .sleekgrid_271367 .l0 { } .sleekgrid_271367 .r0 { } .sleekgrid_271367 .l1 { } .sleekgrid_271367 .r1 { } .sleekgrid_271367 .l2 { } .sleekgrid_271367 .r2 { } .sleekgrid_271367 .l3 { } .sleekgrid_271367 .r3 { }</style></head>
+<body id="s-Page" class="full-height-page modal-dialog-open">
+<div id="PageBackground" style="display: none"></div>
+    
+<aside class="s-sidebar" id="s-sidebar">
+    <div class="s-sidebar-band">
+        <ul class="s-sidebar-band-groups">
+            <li class="active">
+                <a class="s-sidebar-band-link" href="#s_sidebar_group1" title="StartSharp">
+                    <i class="s-sidebar-band-icon fa fa-home"></i>
+                </a>
+            </li>
+            <li class="">
+                <a class="s-sidebar-band-link" href="#s_sidebar_group2" title="Administration">
+                    <i class="s-sidebar-band-icon fa fa-tools"></i>
+                </a>
+            </li>
+        </ul>
+        <div class="s-sidebar-band-middle">
+            <div class="s-sidebar-band-branding">
+                <img class="s-sidebar-band-logo" src="/Content/site/images/serenity-logo-w-128.png">
+                    <span class="s-sidebar-band-title">Start</span><span class="s-sidebar-band-title2">Sharp</span>
+            </div>
+        </div>
+        <ul class="s-sidebar-band-actions">
+        <li>
+            <div class="dropdown dropend">
+                <a href="javascript:;" class="s-sidebar-band-link s-language-selection-link" data-bs-toggle="dropdown" title="switch language">
+                    <i class="s-sidebar-band-icon fa fa-language"></i>
+                </a>
+                <ul class="dropdown-menu s-language-selection-menu">
+                <li><a class="dropdown-item" data-language="zh-CN" href="javascript:;">Chinese (Simplified)</a></li><li><a class="dropdown-item" data-language="en" href="javascript:;">English</a></li><li><a class="dropdown-item" data-language="fa" href="javascript:;">Farsi</a></li><li><a class="dropdown-item" data-language="de" href="javascript:;">German</a></li><li><a class="dropdown-item" data-language="it" href="javascript:;">Italian</a></li><li><a class="dropdown-item" data-language="pt" href="javascript:;">Portuguese</a></li><li><a class="dropdown-item" data-language="pt-BR" href="javascript:;">Portuguese (Brazil)</a></li><li><a class="dropdown-item" data-language="ru" href="javascript:;">Russian</a></li><li><a class="dropdown-item" data-language="es" href="javascript:;">Spanish</a></li><li><a class="dropdown-item" data-language="tr" href="javascript:;">Turkish</a></li><li><a class="dropdown-item" data-language="vi-VN" href="javascript:;">Vietnamese (Vietnam)</a></li></ul>
+            </div>
+        </li>
+        <li>
+            <div class="dropdown dropend">
+                <a href="javascript:;" class="s-sidebar-band-link s-theme-selection-link" data-bs-toggle="dropdown" title="switch theme">
+                    <i class="s-sidebar-band-icon fa fa-fill-drip"></i>
+                </a>
+                <ul class="dropdown-menu s-theme-selection-menu">
+                    <li><a class="dropdown-item" data-theme="azure-light" href="javascript:;">Azure (Light)</a></li>
+                    <li><a class="dropdown-item" data-theme="cosmos-dark" href="javascript:;">Cosmos (Dark)</a></li>
+                    <li><a class="dropdown-item" data-theme="glassy-light" href="javascript:;">Glassy (Light)</a></li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <div class="dropdown dropend">
+                <a href="javascript:;" class="s-sidebar-band-link s-user-profile-link" data-bs-toggle="dropdown" title="admin">
+                    <i class="s-sidebar-band-icon fa fa-user"></i>
+                </a>
+                <div class="dropdown-menu dropdown-menu-md s-user-profile-menu">
+                    <div class="s-user-card p-1 mb-2 text-center border-bottom">
+                        <h2 class="s-user-avatar fs-1 mb-0">
+                            <i class="fa fa-user"></i>
+                        </h2>
+                        <p class="s-user-info fs-6 mb-1">
+                            admin
+                        </p>
+                    </div>
+                    <a class="dropdown-item" href="/Account/ChangePassword">
+                        <em class="icon fa fa-key"></em><span> Cambiar la contraseña</span>
+                    </a>
+                    <a class="dropdown-item" href="/Account/Signout">
+                        <em class="icon fa fa-sign-out-alt"></em><span> Logout</span>
+                    </a>
+                </div>
+            </div>
+        </li>
+            <li class="s-sidebar-pane-toggle">
+                <a href="javascript:;" class="s-sidebar-band-link s-sidebar-pane-toggle-link" title="toggle sidebar">
+                    <i class="s-sidebar-band-icon fa fa-angle-double-left"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="s-sidebar-pane">
+        <div id="s-sidebar-search" class="s-sidebar-search m-3">
+            <i class="fa fa-search fa-flip-horizontal s-sidebar-search-icon"></i>
+            <input type="text" class="w-100 s-sidebar-search-input" placeholder="buscar ...">
+        </div>
+        <div class="s-sidebar-groups">
+                <div class="s-sidebar-group active" id="s_sidebar_group1">
+                    <h5 class="s-sidebar-group-title">StartSharp</h5>
+                        <ul class="s-sidebar-menu" id="s_sidebar_menu1">
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/">
+                    <i class="s-sidebar-icon fa fa-tachometer"></i>
+                    <span class="s-sidebar-link-text">Dashboard</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item s-sidebar-section has-children">
+                <h6 class="s-sidebar-section-title">Demo Modules</h6>
+                <ul id="nav_menu1_2" class="s-sidebar-section-menu">
+        <li class="s-sidebar-item has-children">
+                <a class="s-sidebar-link" href="#nav_menu1_2_1" data-bs-toggle="collapse">
+                    <i class="s-sidebar-icon fa fa-anchor"></i>
+                    <span class="s-sidebar-link-text">Northwind</span>
+<em class="s-sidebar-menu-toggle fa fa-angle-right"></em>                </a>
+                    <ul id="nav_menu1_2_1" class="s-sidebar-menu collapse" data-bs-parent="#nav_menu1_2">
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/Northwind/Customer">
+                    <i class="s-sidebar-icon fa fa-credit-card"></i>
+                    <span class="s-sidebar-link-text">Customers</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/Northwind/Order">
+                    <i class="s-sidebar-icon fa fa-shopping-cart"></i>
+                    <span class="s-sidebar-link-text">Orders</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/Northwind/Product">
+                    <i class="s-sidebar-icon fa fa-cube"></i>
+                    <span class="s-sidebar-link-text">Products</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/Northwind/Supplier">
+                    <i class="s-sidebar-icon fa fa-truck"></i>
+                    <span class="s-sidebar-link-text">Suppliers</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/Northwind/Shipper">
+                    <i class="s-sidebar-icon fa fa-ship"></i>
+                    <span class="s-sidebar-link-text">Shippers</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/Northwind/Category">
+                    <i class="s-sidebar-icon fa fa-folder-o"></i>
+                    <span class="s-sidebar-link-text">Categories</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/Northwind/Region">
+                    <i class="s-sidebar-icon fa fa-map-o"></i>
+                    <span class="s-sidebar-link-text">Regions</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/Northwind/Territory">
+                    <i class="s-sidebar-icon fa fa-puzzle-piece"></i>
+                    <span class="s-sidebar-link-text">Territories</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/Northwind/Reports">
+                    <i class="s-sidebar-icon fa fa-files-o"></i>
+                    <span class="s-sidebar-link-text">Reports</span>
+                </a>
+        </li>
+                    </ul>
+        </li>
+        <li class="s-sidebar-item has-children">
+                <a class="s-sidebar-link" href="#nav_menu1_2_2" data-bs-toggle="collapse">
+                    <i class="s-sidebar-icon fa fa-magic"></i>
+                    <span class="s-sidebar-link-text">Ejemplos básicos</span>
+<em class="s-sidebar-menu-toggle fa fa-angle-right"></em>                </a>
+                    <ul id="nav_menu1_2_2" class="s-sidebar-menu collapse" data-bs-parent="#nav_menu1_2">
+        <li class="s-sidebar-item has-children">
+                <a class="s-sidebar-link" href="#nav_menu1_2_2_1" data-bs-toggle="collapse">
+                    <i class="s-sidebar-icon fa s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Dialogs</span>
+<em class="s-sidebar-menu-toggle fa fa-angle-right"></em>                </a>
+                    <ul id="nav_menu1_2_2_1" class="s-sidebar-menu collapse" data-bs-parent="#nav_menu1_2_2">
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/BasicSamples/ChartInDialog">
+                    <i class="s-sidebar-icon fa s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Chart in a Dialog</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/BasicSamples/CloneableEntityDialog">
+                    <i class="s-sidebar-icon fa s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Cloneable Entity Dialog</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/BasicSamples/DefaultValuesInNewDialog">
+                    <i class="s-sidebar-icon fa s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Default Values in New Dialog</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/BasicSamples/DialogBoxes">
+                    <i class="s-sidebar-icon fa s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Dialog Boxes</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/BasicSamples/EntityDialogAsPanel/11077">
+                    <i class="s-sidebar-icon fa s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Entity Dialog as Panel</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/BasicSamples/GetInsertedRecordId">
+                    <i class="s-sidebar-icon fa s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Get Inserted Record ID</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/BasicSamples/OtherFormInTab">
+                    <i class="s-sidebar-icon fa s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Other Form In Tab</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/BasicSamples/OtherFormInTabOneBar">
+                    <i class="s-sidebar-icon fa s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Other Form, One Toolbar</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/BasicSamples/PopulateLinkedData">
+                    <i class="s-sidebar-icon fa s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Populate Linked Data</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/BasicSamples/ReadOnlyDialog">
+                    <i class="s-sidebar-icon fa s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Read-Only Dialog</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/BasicSamples/SerialAutoNumber">
+                    <i class="s-sidebar-icon fa s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Serial Auto Numbering</span>
+                </a>
+        </li>
+                    </ul>
+        </li>
+        <li class="s-sidebar-item has-children">
+                <a class="s-sidebar-link" href="#nav_menu1_2_2_2" data-bs-toggle="collapse">
+                    <i class="s-sidebar-icon fa s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Editors</span>
+<em class="s-sidebar-menu-toggle fa fa-angle-right"></em>                </a>
+                    <ul id="nav_menu1_2_2_2" class="s-sidebar-menu collapse" data-bs-parent="#nav_menu1_2_2">
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/BasicSamples/ChangingLookupText">
+                    <i class="s-sidebar-icon fa s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Changing Lookup Text</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/BasicSamples/FilteredLookupInDetailDialog">
+                    <i class="s-sidebar-icon fa s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Filtered Lookup in Detail.</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/BasicSamples/LookupFilterByMultipleValues">
+                    <i class="s-sidebar-icon fa s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Lookup Filter by Multi Val.</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/BasicSamples/SelectWithHardcodedValues">
+                    <i class="s-sidebar-icon fa s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Select with Hardcod.Vals.</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/BasicSamples/StaticTextBlock">
+                    <i class="s-sidebar-icon fa s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Static Text Block</span>
+                </a>
+        </li>
+                    </ul>
+        </li>
+        <li class="s-sidebar-item has-children">
+                <a class="s-sidebar-link" href="#nav_menu1_2_2_3" data-bs-toggle="collapse">
+                    <i class="s-sidebar-icon fa s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Grids</span>
+<em class="s-sidebar-menu-toggle fa fa-angle-right"></em>                </a>
+                    <ul id="nav_menu1_2_2_3" class="s-sidebar-menu collapse" data-bs-parent="#nav_menu1_2_2">
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/BasicSamples/CustomLinksInGrid">
+                    <i class="s-sidebar-icon fa s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Custom Links In Grid</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/BasicSamples/EnablingRowSelection">
+                    <i class="s-sidebar-icon fa s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Enabling Row Selection</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/BasicSamples/GroupingAndSummariesInGrid">
+                    <i class="s-sidebar-icon fa s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Grouping and Sum. In Grid</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/BasicSamples/GridFilteredByCriteria">
+                    <i class="s-sidebar-icon fa s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Grid Filtered by Criteria</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/BasicSamples/InitialValuesForQuickFilters">
+                    <i class="s-sidebar-icon fa s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Initial Value for Quick Flt.</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/BasicSamples/InlineActionButtons">
+                    <i class="s-sidebar-icon fa s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Inline Action Buttons</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/BasicSamples/InlineImageInGrid">
+                    <i class="s-sidebar-icon fa s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Inline Image In Grid</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/BasicSamples/RemovingAddButton">
+                    <i class="s-sidebar-icon fa s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Removing Add Button</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/BasicSamples/ViewWithoutID">
+                    <i class="s-sidebar-icon fa s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">View Without ID</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/BasicSamples/WrappedHeaders">
+                    <i class="s-sidebar-icon fa s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Wrapped Headers</span>
+                </a>
+        </li>
+                    </ul>
+        </li>
+        <li class="s-sidebar-item has-children">
+                <a class="s-sidebar-link" href="#nav_menu1_2_2_4" data-bs-toggle="collapse">
+                    <i class="s-sidebar-icon fa s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Dynamic Navigation</span>
+<em class="s-sidebar-menu-toggle fa fa-angle-right"></em>                </a>
+                    <ul id="nav_menu1_2_2_4" class="s-sidebar-menu collapse" data-bs-parent="#nav_menu1_2_2">
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/Northwind/Product?cat=1">
+                    <i class="s-sidebar-icon fa icon-folder-alt"></i>
+                    <span class="s-sidebar-link-text">Beverages</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/Northwind/Product?cat=2">
+                    <i class="s-sidebar-icon fa icon-folder-alt"></i>
+                    <span class="s-sidebar-link-text">Condiments</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/Northwind/Product?cat=3">
+                    <i class="s-sidebar-icon fa icon-folder-alt"></i>
+                    <span class="s-sidebar-link-text">Confections</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/Northwind/Product?cat=4">
+                    <i class="s-sidebar-icon fa icon-folder-alt"></i>
+                    <span class="s-sidebar-link-text">Dairy Products</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/Northwind/Product?cat=5">
+                    <i class="s-sidebar-icon fa icon-folder-alt"></i>
+                    <span class="s-sidebar-link-text">Grains/Cereals</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/Northwind/Product?cat=6">
+                    <i class="s-sidebar-icon fa icon-folder-alt"></i>
+                    <span class="s-sidebar-link-text">Meat/Poultry</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/Northwind/Product?cat=7">
+                    <i class="s-sidebar-icon fa icon-folder-alt"></i>
+                    <span class="s-sidebar-link-text">Produce</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/Northwind/Product?cat=8">
+                    <i class="s-sidebar-icon fa icon-folder-alt"></i>
+                    <span class="s-sidebar-link-text">Seafood</span>
+                </a>
+        </li>
+                    </ul>
+        </li>
+                    </ul>
+        </li>
+        <li class="s-sidebar-item has-children">
+                <a class="s-sidebar-link" href="#nav_menu1_2_3" data-bs-toggle="collapse">
+                    <i class="s-sidebar-icon fa fa-star premium-feature"></i>
+                    <span class="s-sidebar-link-text">Advanced Samples</span>
+<em class="s-sidebar-menu-toggle fa fa-angle-right"></em>                </a>
+                    <ul id="nav_menu1_2_3" class="s-sidebar-menu collapse" data-bs-parent="#nav_menu1_2">
+        <li class="s-sidebar-item has-children">
+                <a class="s-sidebar-link" href="#nav_menu1_2_3_1" data-bs-toggle="collapse">
+                    <i class="s-sidebar-icon fa s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Data Tables</span>
+<em class="s-sidebar-menu-toggle fa fa-angle-right"></em>                </a>
+                    <ul id="nav_menu1_2_3_1" class="s-sidebar-menu collapse" data-bs-parent="#nav_menu1_2_3">
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/AdvancedSamples/BasicInit">
+                    <i class="s-sidebar-icon fa s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Basic Initialization</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/AdvancedSamples/ServerSide">
+                    <i class="s-sidebar-icon fa s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Server Side Source</span>
+                </a>
+        </li>
+                    </ul>
+        </li>
+        <li class="s-sidebar-item has-children">
+                <a class="s-sidebar-link" href="#nav_menu1_2_3_2" data-bs-toggle="collapse">
+                    <i class="s-sidebar-icon fa s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Editors</span>
+<em class="s-sidebar-menu-toggle fa fa-angle-right"></em>                </a>
+                    <ul id="nav_menu1_2_3_2" class="s-sidebar-menu collapse" data-bs-parent="#nav_menu1_2_3">
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/AdvancedSamples/InputWithInlineButtons">
+                    <i class="s-sidebar-icon fa s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Input with Inline Buttons</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/AdvancedSamples/MultiDatesPicker">
+                    <i class="s-sidebar-icon fa s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Multi Dates Picker</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/AdvancedSamples/ProductPicker">
+                    <i class="s-sidebar-icon fa s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Product Picker</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/AdvancedSamples/EnumFlagsEditor">
+                    <i class="s-sidebar-icon fa s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Enum Flags Editor</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/AdvancedSamples/GoogleMapsEditor">
+                    <i class="s-sidebar-icon fa s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Google Maps Editor</span>
+                </a>
+        </li>
+                    </ul>
+        </li>
+        <li class="s-sidebar-item has-children">
+                <a class="s-sidebar-link" href="#nav_menu1_2_3_3" data-bs-toggle="collapse">
+                    <i class="s-sidebar-icon fa s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Forms</span>
+<em class="s-sidebar-menu-toggle fa fa-angle-right"></em>                </a>
+                    <ul id="nav_menu1_2_3_3" class="s-sidebar-menu collapse" data-bs-parent="#nav_menu1_2_3">
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/AdvancedSamples/BootstrapFormList">
+                    <i class="s-sidebar-icon fa s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Bootstrap Form</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/AdvancedSamples/EntityGridDialog">
+                    <i class="s-sidebar-icon fa s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Entity Grid Dialog</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/AdvancedSamples/OrderWizard">
+                    <i class="s-sidebar-icon fa s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Order Wizard</span>
+                </a>
+        </li>
+                    </ul>
+        </li>
+        <li class="s-sidebar-item has-children">
+                <a class="s-sidebar-link" href="#nav_menu1_2_3_4" data-bs-toggle="collapse">
+                    <i class="s-sidebar-icon fa s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Grids</span>
+<em class="s-sidebar-menu-toggle fa fa-angle-right"></em>                </a>
+                    <ul id="nav_menu1_2_3_4" class="s-sidebar-menu collapse" data-bs-parent="#nav_menu1_2_3">
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/AdvancedSamples/AutoColumnWidth">
+                    <i class="s-sidebar-icon fa s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Auto Column Width</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/AdvancedSamples/CardView">
+                    <i class="s-sidebar-icon fa s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Card View</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/AdvancedSamples/CustomizableSummaries">
+                    <i class="s-sidebar-icon fa s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Customizable Summaries</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/AdvancedSamples/CancellableBulkAction">
+                    <i class="s-sidebar-icon fa s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Cancellable Bulk Action</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/AdvancedSamples/ConditionalFormatting">
+                    <i class="s-sidebar-icon fa s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Conditional Formatting</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/AdvancedSamples/DragDropGrouping">
+                    <i class="s-sidebar-icon fa s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Drag &amp; Drop Grouping</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/AdvancedSamples/DragDropInTreeGrid">
+                    <i class="s-sidebar-icon fa s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Drag &amp; Drop in Tree Grid</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/AdvancedSamples/ExcelStyleFilters">
+                    <i class="s-sidebar-icon fa s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Excel Style Filtering</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/AdvancedSamples/InlineEditing">
+                    <i class="s-sidebar-icon fa s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Inline Editing</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/AdvancedSamples/LongRunningAction">
+                    <i class="s-sidebar-icon fa s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Long Running Action</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/AdvancedSamples/ProductExcelImport">
+                    <i class="s-sidebar-icon fa s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Product Excel Import</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/AdvancedSamples/QuickFilterCustomization">
+                    <i class="s-sidebar-icon fa s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Quick Filter Customization</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/AdvancedSamples/SplitMasterDetail">
+                    <i class="s-sidebar-icon fa s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Split Master Detail Grids</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/AdvancedSamples/StoredProcedureGrid">
+                    <i class="s-sidebar-icon fa s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Stored Procedure Grid</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/AdvancedSamples/TreeGrid">
+                    <i class="s-sidebar-icon fa s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Tree Grid</span>
+                </a>
+        </li>
+                    </ul>
+        </li>
+        <li class="s-sidebar-item has-children">
+                <a class="s-sidebar-link" href="#nav_menu1_2_3_5" data-bs-toggle="collapse">
+                    <i class="s-sidebar-icon fa s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Misc</span>
+<em class="s-sidebar-menu-toggle fa fa-angle-right"></em>                </a>
+                    <ul id="nav_menu1_2_3_5" class="s-sidebar-menu collapse" data-bs-parent="#nav_menu1_2_3">
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/AdvancedSamples/DataAuditLog">
+                    <i class="s-sidebar-icon fa s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Data Audit Log</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/AdvancedSamples/DataExplorer">
+                    <i class="s-sidebar-icon fa s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Data Explorer</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/EmailClient/Mailbox">
+                    <i class="s-sidebar-icon fa s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">E-mail Client (IMAP)</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/AdvancedSamples/IdleTimeout">
+                    <i class="s-sidebar-icon fa s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Idle (Session) Timeout</span>
+                </a>
+        </li>
+                    </ul>
+        </li>
+                    </ul>
+        </li>
+                </ul>
+        </li>
+        <li class="s-sidebar-item s-sidebar-section active has-children">
+                <h6 class="s-sidebar-section-title">Pro Features</h6>
+                <ul id="nav_menu1_3" class="s-sidebar-section-menu">
+        <li class="s-sidebar-item active has-children">
+                <a class="s-sidebar-link" href="#nav_menu1_3_1" data-bs-toggle="collapse" aria-expanded="true">
+                    <i class="s-sidebar-icon fa fa-sitemap premium-feature"></i>
+                    <span class="s-sidebar-link-text">Organization</span>
+<em class="s-sidebar-menu-toggle fa fa-angle-right"></em>                </a>
+                    <ul id="nav_menu1_3_1" class="s-sidebar-menu collapse show" data-bs-parent="#nav_menu1_3">
+        <li class="s-sidebar-item active">
+                <a class="s-sidebar-link" href="/Organization/BusinessUnit">
+                    <i class="s-sidebar-icon fa fa-sitemap"></i>
+                    <span class="s-sidebar-link-text">Business Units</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/Organization/Contact">
+                    <i class="s-sidebar-icon fa fa-address-book"></i>
+                    <span class="s-sidebar-link-text">Contacts</span>
+                </a>
+        </li>
+                    </ul>
+        </li>
+        <li class="s-sidebar-item has-children">
+                <a class="s-sidebar-link" href="#nav_menu1_3_2" data-bs-toggle="collapse">
+                    <i class="s-sidebar-icon fa fa-comments premium-feature"></i>
+                    <span class="s-sidebar-link-text">Meeting</span>
+<em class="s-sidebar-menu-toggle fa fa-angle-right"></em>                </a>
+                    <ul id="nav_menu1_3_2" class="s-sidebar-menu collapse" data-bs-parent="#nav_menu1_3">
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/Meeting/Meeting">
+                    <i class="s-sidebar-icon fa s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Meetings</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/Meeting/MeetingAgendaType">
+                    <i class="s-sidebar-icon fa s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Meeting Agenda Types</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/Meeting/MeetingLocation">
+                    <i class="s-sidebar-icon fa s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Meeting Locations</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/Meeting/MeetingType">
+                    <i class="s-sidebar-icon fa s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Meeting Types</span>
+                </a>
+        </li>
+                    </ul>
+        </li>
+        <li class="s-sidebar-item has-children">
+                <a class="s-sidebar-link" href="#nav_menu1_3_3" data-bs-toggle="collapse">
+                    <i class="s-sidebar-icon fa fa-hourglass-end premium-feature"></i>
+                    <span class="s-sidebar-link-text">Work Log</span>
+<em class="s-sidebar-menu-toggle fa fa-angle-right"></em>                </a>
+                    <ul id="nav_menu1_3_3" class="s-sidebar-menu collapse" data-bs-parent="#nav_menu1_3">
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/WorkLog/WorkLog">
+                    <i class="s-sidebar-icon fa fa-clock-o"></i>
+                    <span class="s-sidebar-link-text">Work Logs</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/WorkLog/Invoice">
+                    <i class="s-sidebar-icon fa fa-file-text"></i>
+                    <span class="s-sidebar-link-text">Invoices</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item has-children">
+                <a class="s-sidebar-link" href="#nav_menu1_3_3_3" data-bs-toggle="collapse">
+                    <i class="s-sidebar-icon fa s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Setup</span>
+<em class="s-sidebar-menu-toggle fa fa-angle-right"></em>                </a>
+                    <ul id="nav_menu1_3_3_3" class="s-sidebar-menu collapse" data-bs-parent="#nav_menu1_3_3">
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/WorkLog/Employee">
+                    <i class="s-sidebar-icon fa fa-users"></i>
+                    <span class="s-sidebar-link-text">Employees</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/WorkLog/Customer">
+                    <i class="s-sidebar-icon fa fa-user"></i>
+                    <span class="s-sidebar-link-text">Customers</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/WorkLog/Project">
+                    <i class="s-sidebar-icon fa fa-book"></i>
+                    <span class="s-sidebar-link-text">Projects</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/WorkLog/EmployeePricing">
+                    <i class="s-sidebar-icon fa fa-envelope"></i>
+                    <span class="s-sidebar-link-text">Pricing</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/WorkLog/Currency">
+                    <i class="s-sidebar-icon fa fa-usd"></i>
+                    <span class="s-sidebar-link-text">Currencies</span>
+                </a>
+        </li>
+                    </ul>
+        </li>
+                    </ul>
+        </li>
+                </ul>
+        </li>
+                        </ul>
+                </div>
+                <div class="s-sidebar-group" id="s_sidebar_group2">
+                    <h5 class="s-sidebar-group-title">Administration</h5>
+                        <ul class="s-sidebar-menu" id="s_sidebar_menu2">
+        <li class="s-sidebar-item s-sidebar-section has-children">
+                <h6 class="s-sidebar-section-title">General</h6>
+                <ul id="nav_menu2_1" class="s-sidebar-section-menu">
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/DataAuditLog">
+                    <i class="s-sidebar-icon fa fa-history premium-feature"></i>
+                    <span class="s-sidebar-link-text">Data Audit Log</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/DataExplorer">
+                    <i class="s-sidebar-icon fa fa-database premium-feature"></i>
+                    <span class="s-sidebar-link-text">Data Explorer</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/EmailQueue">
+                    <i class="s-sidebar-icon fa fa-envelope-o premium-feature"></i>
+                    <span class="s-sidebar-link-text">Email Queue</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/Administration/ExceptionLog/" target="_blank">
+                    <i class="s-sidebar-icon fa fa-ban"></i>
+                    <span class="s-sidebar-link-text">Exception Log</span>
+                </a>
+        </li>
+                </ul>
+        </li>
+        <li class="s-sidebar-item s-sidebar-section has-children">
+                <h6 class="s-sidebar-section-title">Localization</h6>
+                <ul id="nav_menu2_2" class="s-sidebar-section-menu">
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/Administration/Language">
+                    <i class="s-sidebar-icon fa fa-comments"></i>
+                    <span class="s-sidebar-link-text">Idiomas</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/Administration/Translation">
+                    <i class="s-sidebar-icon fa fa-comment-o"></i>
+                    <span class="s-sidebar-link-text">Translations</span>
+                </a>
+        </li>
+                </ul>
+        </li>
+        <li class="s-sidebar-item s-sidebar-section has-children">
+                <h6 class="s-sidebar-section-title">Security</h6>
+                <ul id="nav_menu2_3" class="s-sidebar-section-menu">
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/Administration/Role">
+                    <i class="s-sidebar-icon fa fa-lock"></i>
+                    <span class="s-sidebar-link-text">Roles</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/Administration/User">
+                    <i class="s-sidebar-icon fa fa-users"></i>
+                    <span class="s-sidebar-link-text">User Management</span>
+                </a>
+        </li>
+                </ul>
+        </li>
+                        </ul>
+                </div>
+        </div>
+    </div>
+</aside>
+
+<header class="navbar sticky-top s-mobile-header">
+    <button class="s-sidebar-toggler" type="button" id="s-sidebar-toggler" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars"></i>
+    </button>
+    <div class="s-mobile-header-branding">
+        <img class="s-mobile-header-logo" src="/Content/site/images/serenity-logo-w-128.png">
+    </div>
+    <ul class="s-mobile-header-actions">
+        <li>
+            <div class="dropdown">
+                <a href="javascript:;" class="s-mobile-header-link s-language-selection-link" data-bs-toggle="dropdown" title="switch language">
+                    <i class="s-mobile-header-icon fa fa-language"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end s-language-selection-menu">
+                <li><a class="dropdown-item" data-language="zh-CN" href="javascript:;">Chinese (Simplified)</a></li><li><a class="dropdown-item" data-language="en" href="javascript:;">English</a></li><li><a class="dropdown-item" data-language="fa" href="javascript:;">Farsi</a></li><li><a class="dropdown-item" data-language="de" href="javascript:;">German</a></li><li><a class="dropdown-item" data-language="it" href="javascript:;">Italian</a></li><li><a class="dropdown-item" data-language="pt" href="javascript:;">Portuguese</a></li><li><a class="dropdown-item" data-language="pt-BR" href="javascript:;">Portuguese (Brazil)</a></li><li><a class="dropdown-item" data-language="ru" href="javascript:;">Russian</a></li><li><a class="dropdown-item" data-language="es" href="javascript:;">Spanish</a></li><li><a class="dropdown-item" data-language="tr" href="javascript:;">Turkish</a></li><li><a class="dropdown-item" data-language="vi-VN" href="javascript:;">Vietnamese (Vietnam)</a></li></ul>
+            </div>
+        </li>
+        <li>
+            <div class="dropdown">
+                <a href="javascript:;" class="s-mobile-header-link s-theme-selection-link" data-bs-toggle="dropdown" title="switch theme">
+                    <i class="s-mobile-header-icon fa fa-fill-drip"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end s-theme-selection-menu">
+                    <li><a class="dropdown-item" data-theme="azure-light" href="javascript:;">Azure (Light)</a></li>
+                    <li><a class="dropdown-item" data-theme="cosmos-dark" href="javascript:;">Cosmos (Dark)</a></li>
+                    <li><a class="dropdown-item" data-theme="glassy-light" href="javascript:;">Glassy (Light)</a></li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <div class="dropdown">
+                <a href="javascript:;" class="s-mobile-header-link s-user-profile-link" data-bs-toggle="dropdown" title="admin">
+                    <i class="s-mobile-header-icon fa fa-user"></i>
+                </a>
+                <div class="dropdown-menu dropdown-menu-md dropdown-menu-end s-user-profile-menu">
+                    <div class="s-user-card p-1 mb-2 text-center border-bottom">
+                        <h2 class="s-user-avatar fs-1 mb-0">
+                            <i class="fa fa-user"></i>
+                        </h2>
+                        <p class="s-user-info fs-6 mb-1">
+                            admin
+                        </p>
+                    </div>
+                    <a class="dropdown-item" href="/Account/ChangePassword">
+                        <em class="icon fa fa-key"></em><span> Cambiar la contraseña</span>
+                    </a>
+                    <a class="dropdown-item" href="/Account/Signout">
+                        <em class="icon fa fa-sign-out-alt"></em><span> Logout</span>
+                    </a>
+                </div>
+            </div>
+        </li>
+    </ul>
+</header>
+    <main class="s-main">
+        <section class="content">
+
+                <link href="/Serenity.Pro.Organization/index.css?v=yYNH__hJGhmu6j2Zopp6Kg" rel="stylesheet" type="text/css">
+
+    <script src="/Serenity.Pro.Organization/index.js?v=xPlEiybj2S7JlB1aKeuofw" type="text/javascript"></script>
+
+<div id="GridDiv" class="s-Serenity-Pro-Organization-BusinessUnitGrid s-Pro-Organization-BusinessUnitGrid s-BusinessUnitGrid s-DataGrid require-layout route-handler responsive-height" style="height: 1px;"><div class="grid-title"><div class="title-text">Business Units</div></div><div class="grid-toolbar s-Serenity-Toolbar s-Toolbar clearfix"><div class="s-QuickSearchBar"><span class="quick-search-icon"><i></i></span><input type="text" class="s-Serenity-QuickSearchInput s-QuickSearchInput" title="introduzca el texto a buscar ..." placeholder="buscar ..."></div><div class="tool-buttons"><div class="buttons-outer"><div class="buttons-inner"><div class="tool-button add-button icon-tool-button"><div class="button-outer"><span class="button-inner"><i class="fa fa-plus-circle text-green"></i> Nuevo Business Unit</span></div></div><div class="tool-button refresh-button icon-tool-button" title="Refrescar"><div class="button-outer"><span class="button-inner"><i class="fa fa-refresh text-blue"></i> </span></div></div><div class="tool-button column-picker-button icon-tool-button" title="Selector de Columnas"><div class="button-outer"><span class="button-inner"><i class="fa fa-th-list text-blue"></i> </span></div></div></div></div></div></div><div class="grid-container slick-container sleekgrid_271367 ui-widget" style="overflow: hidden; outline: 0px; position: relative;"><div class="slick-focus-sink" hidefocus="" style="position:fixed;width:0!important;height:0!important;top:0;left:0;outline:0!important;" tabindex="0"></div><div class="slick-header ui-state-default"><div class="slick-header-columns ui-sortable" style="left: -1000px; width: 2149.4px; user-select: none;" unselectable="on"><div class="slick-header-column ui-state-default slick-header-sortable ui-sortable-handle" id="sleekgrid_271367UnitId" title="" style="width: 80px" data-c="0"><span class="slick-column-name">ID</span><span class="slick-sort-indicator"></span><div class="slick-resizable-handle" draggable="true"></div></div><div class="slick-header-column ui-state-default slick-header-sortable ui-sortable-handle" id="sleekgrid_271367Name" title="" style="width: 333.07692307692304px" data-c="1"><span class="slick-column-name">Name</span><span class="slick-sort-indicator"></span><div class="slick-resizable-handle" draggable="true"></div></div><div class="slick-header-column ui-state-default slick-header-sortable ui-sortable-handle" id="sleekgrid_271367Add Child Unit" title="" style="width: 35.84615384615385px" data-c="2"><span class="slick-column-name"></span><span class="slick-sort-indicator"></span><div class="slick-resizable-handle" draggable="true"></div></div><div class="slick-header-column ui-state-default slick-header-sortable ui-sortable-handle" id="sleekgrid_271367ParentUnitName" title="" style="width: 333.07692307692304px" data-c="3"><span class="slick-column-name">Parent Unit Name</span><span class="slick-sort-indicator"></span><div class="slick-resizable-handle" draggable="true"></div></div></div></div><div class="slick-headerrow ui-state-default" style="display: none"><div class="slick-headerrow-columns" style="width: 782px;"></div><div style="display: block; height: 1px; position: absolute; top: 0px; left: 0px; width: 788px;" width="788px"></div></div><div class="slick-top-panel-scroller ui-state-default" style="display: none"><div class="slick-top-panel" style="width: 10000px"></div></div><div class="slick-viewport" tabindex="0" hidefocus="" style="overflow: auto; height: 521.4px;"><div class="grid-canvas" tabindex="0" hidefocus="" style="height: 936px; width: 782px;"><div class="ui-widget-content slick-row even" style="top:0px"><div class="slick-cell l0 r0 align-right"><a href="#Pro-Organization-BusinessUnit/1" data-item-type="Pro.Organization.BusinessUnit" data-item-id="1" class="s-EditLink s-Pro-Organization-BusinessUnitLink">1</a></div><div class="slick-cell l1 r1"><span class="s-TreeIndent" style="width:0px"></span><span class="s-TreeToggle s-TreeCollapse"></span><a href="#Pro-Organization-BusinessUnit/1" data-item-type="Pro.Organization.BusinessUnit" data-item-id="1" class="s-EditLink s-Pro-Organization-BusinessUnitLink">Acme Corp.</a></div><div class="slick-cell l2 r2"><a class="inline-action add-child-unit" title="add child unit"></a></div><div class="slick-cell l3 r3"><a href="#Pro-Organization-BusinessUnit/1" data-item-type="Pro.Organization.BusinessUnit" data-item-id="1" class="s-EditLink s-Pro-Organization-BusinessUnitLink"></a></div></div><div class="ui-widget-content slick-row odd" style="top:36px"><div class="slick-cell l0 r0 align-right"><a href="#Pro-Organization-BusinessUnit/2" data-item-type="Pro.Organization.BusinessUnit" data-item-id="2" class="s-EditLink s-Pro-Organization-BusinessUnitLink">2</a></div><div class="slick-cell l1 r1"><span class="s-TreeIndent" style="width:15px"></span><span class="s-TreeToggle s-TreeCollapse"></span><a href="#Pro-Organization-BusinessUnit/2" data-item-type="Pro.Organization.BusinessUnit" data-item-id="2" class="s-EditLink s-Pro-Organization-BusinessUnitLink">Administration</a></div><div class="slick-cell l2 r2"><a class="inline-action add-child-unit" title="add child unit"></a></div><div class="slick-cell l3 r3"><a href="#Pro-Organization-BusinessUnit/2" data-item-type="Pro.Organization.BusinessUnit" data-item-id="2" class="s-EditLink s-Pro-Organization-BusinessUnitLink">Acme Corp.</a></div></div><div class="ui-widget-content slick-row even" style="top:72px"><div class="slick-cell l0 r0 align-right"><a href="#Pro-Organization-BusinessUnit/3" data-item-type="Pro.Organization.BusinessUnit" data-item-id="3" class="s-EditLink s-Pro-Organization-BusinessUnitLink">3</a></div><div class="slick-cell l1 r1"><span class="s-TreeIndent" style="width:30px"></span><span class="s-TreeToggle"></span><a href="#Pro-Organization-BusinessUnit/3" data-item-type="Pro.Organization.BusinessUnit" data-item-id="3" class="s-EditLink s-Pro-Organization-BusinessUnitLink">Finance</a></div><div class="slick-cell l2 r2"><a class="inline-action add-child-unit" title="add child unit"></a></div><div class="slick-cell l3 r3"><a href="#Pro-Organization-BusinessUnit/3" data-item-type="Pro.Organization.BusinessUnit" data-item-id="3" class="s-EditLink s-Pro-Organization-BusinessUnitLink">Administration</a></div></div><div class="ui-widget-content slick-row odd" style="top:108px"><div class="slick-cell l0 r0 align-right"><a href="#Pro-Organization-BusinessUnit/4" data-item-type="Pro.Organization.BusinessUnit" data-item-id="4" class="s-EditLink s-Pro-Organization-BusinessUnitLink">4</a></div><div class="slick-cell l1 r1"><span class="s-TreeIndent" style="width:30px"></span><span class="s-TreeToggle"></span><a href="#Pro-Organization-BusinessUnit/4" data-item-type="Pro.Organization.BusinessUnit" data-item-id="4" class="s-EditLink s-Pro-Organization-BusinessUnitLink">Human Resources</a></div><div class="slick-cell l2 r2"><a class="inline-action add-child-unit" title="add child unit"></a></div><div class="slick-cell l3 r3"><a href="#Pro-Organization-BusinessUnit/4" data-item-type="Pro.Organization.BusinessUnit" data-item-id="4" class="s-EditLink s-Pro-Organization-BusinessUnitLink">Administration</a></div></div><div class="ui-widget-content slick-row even" style="top:144px"><div class="slick-cell l0 r0 align-right"><a href="#Pro-Organization-BusinessUnit/14" data-item-type="Pro.Organization.BusinessUnit" data-item-id="14" class="s-EditLink s-Pro-Organization-BusinessUnitLink">14</a></div><div class="slick-cell l1 r1"><span class="s-TreeIndent" style="width:15px"></span><span class="s-TreeToggle s-TreeCollapse"></span><a href="#Pro-Organization-BusinessUnit/14" data-item-type="Pro.Organization.BusinessUnit" data-item-id="14" class="s-EditLink s-Pro-Organization-BusinessUnitLink">Marketing</a></div><div class="slick-cell l2 r2"><a class="inline-action add-child-unit" title="add child unit"></a></div><div class="slick-cell l3 r3"><a href="#Pro-Organization-BusinessUnit/14" data-item-type="Pro.Organization.BusinessUnit" data-item-id="14" class="s-EditLink s-Pro-Organization-BusinessUnitLink">Acme Corp.</a></div></div><div class="ui-widget-content slick-row odd" style="top:180px"><div class="slick-cell l0 r0 align-right"><a href="#Pro-Organization-BusinessUnit/15" data-item-type="Pro.Organization.BusinessUnit" data-item-id="15" class="s-EditLink s-Pro-Organization-BusinessUnitLink">15</a></div><div class="slick-cell l1 r1"><span class="s-TreeIndent" style="width:30px"></span><span class="s-TreeToggle"></span><a href="#Pro-Organization-BusinessUnit/15" data-item-type="Pro.Organization.BusinessUnit" data-item-id="15" class="s-EditLink s-Pro-Organization-BusinessUnitLink">Editor Team</a></div><div class="slick-cell l2 r2"><a class="inline-action add-child-unit" title="add child unit"></a></div><div class="slick-cell l3 r3"><a href="#Pro-Organization-BusinessUnit/15" data-item-type="Pro.Organization.BusinessUnit" data-item-id="15" class="s-EditLink s-Pro-Organization-BusinessUnitLink">Marketing</a></div></div><div class="ui-widget-content slick-row even" style="top:216px"><div class="slick-cell l0 r0 align-right"><a href="#Pro-Organization-BusinessUnit/16" data-item-type="Pro.Organization.BusinessUnit" data-item-id="16" class="s-EditLink s-Pro-Organization-BusinessUnitLink">16</a></div><div class="slick-cell l1 r1"><span class="s-TreeIndent" style="width:30px"></span><span class="s-TreeToggle"></span><a href="#Pro-Organization-BusinessUnit/16" data-item-type="Pro.Organization.BusinessUnit" data-item-id="16" class="s-EditLink s-Pro-Organization-BusinessUnitLink">Marketing Strategies</a></div><div class="slick-cell l2 r2"><a class="inline-action add-child-unit" title="add child unit"></a></div><div class="slick-cell l3 r3"><a href="#Pro-Organization-BusinessUnit/16" data-item-type="Pro.Organization.BusinessUnit" data-item-id="16" class="s-EditLink s-Pro-Organization-BusinessUnitLink">Marketing</a></div></div><div class="ui-widget-content slick-row odd" style="top:252px"><div class="slick-cell l0 r0 align-right"><a href="#Pro-Organization-BusinessUnit/17" data-item-type="Pro.Organization.BusinessUnit" data-item-id="17" class="s-EditLink s-Pro-Organization-BusinessUnitLink">17</a></div><div class="slick-cell l1 r1"><span class="s-TreeIndent" style="width:30px"></span><span class="s-TreeToggle"></span><a href="#Pro-Organization-BusinessUnit/17" data-item-type="Pro.Organization.BusinessUnit" data-item-id="17" class="s-EditLink s-Pro-Organization-BusinessUnitLink">Public Relations</a></div><div class="slick-cell l2 r2"><a class="inline-action add-child-unit" title="add child unit"></a></div><div class="slick-cell l3 r3"><a href="#Pro-Organization-BusinessUnit/17" data-item-type="Pro.Organization.BusinessUnit" data-item-id="17" class="s-EditLink s-Pro-Organization-BusinessUnitLink">Marketing</a></div></div><div class="ui-widget-content slick-row even" style="top:288px"><div class="slick-cell l0 r0 align-right"><a href="#Pro-Organization-BusinessUnit/18" data-item-type="Pro.Organization.BusinessUnit" data-item-id="18" class="s-EditLink s-Pro-Organization-BusinessUnitLink">18</a></div><div class="slick-cell l1 r1"><span class="s-TreeIndent" style="width:15px"></span><span class="s-TreeToggle"></span><a href="#Pro-Organization-BusinessUnit/18" data-item-type="Pro.Organization.BusinessUnit" data-item-id="18" class="s-EditLink s-Pro-Organization-BusinessUnitLink">Master1</a></div><div class="slick-cell l2 r2"><a class="inline-action add-child-unit" title="add child unit"></a></div><div class="slick-cell l3 r3"><a href="#Pro-Organization-BusinessUnit/18" data-item-type="Pro.Organization.BusinessUnit" data-item-id="18" class="s-EditLink s-Pro-Organization-BusinessUnitLink">Acme Corp.</a></div></div><div class="ui-widget-content slick-row odd" style="top:324px"><div class="slick-cell l0 r0 align-right"><a href="#Pro-Organization-BusinessUnit/19" data-item-type="Pro.Organization.BusinessUnit" data-item-id="19" class="s-EditLink s-Pro-Organization-BusinessUnitLink">19</a></div><div class="slick-cell l1 r1"><span class="s-TreeIndent" style="width:15px"></span><span class="s-TreeToggle"></span><a href="#Pro-Organization-BusinessUnit/19" data-item-type="Pro.Organization.BusinessUnit" data-item-id="19" class="s-EditLink s-Pro-Organization-BusinessUnitLink">Master1</a></div><div class="slick-cell l2 r2"><a class="inline-action add-child-unit" title="add child unit"></a></div><div class="slick-cell l3 r3"><a href="#Pro-Organization-BusinessUnit/19" data-item-type="Pro.Organization.BusinessUnit" data-item-id="19" class="s-EditLink s-Pro-Organization-BusinessUnitLink">Acme Corp.</a></div></div><div class="ui-widget-content slick-row even" style="top:360px"><div class="slick-cell l0 r0 align-right"><a href="#Pro-Organization-BusinessUnit/20" data-item-type="Pro.Organization.BusinessUnit" data-item-id="20" class="s-EditLink s-Pro-Organization-BusinessUnitLink">20</a></div><div class="slick-cell l1 r1" title=""><span class="s-TreeIndent" style="width:15px"></span><span class="s-TreeToggle"></span><a href="#Pro-Organization-BusinessUnit/20" data-item-type="Pro.Organization.BusinessUnit" data-item-id="20" class="s-EditLink s-Pro-Organization-BusinessUnitLink">Master1</a></div><div class="slick-cell l2 r2"><a class="inline-action add-child-unit" title="add child unit"></a></div><div class="slick-cell l3 r3"><a href="#Pro-Organization-BusinessUnit/20" data-item-type="Pro.Organization.BusinessUnit" data-item-id="20" class="s-EditLink s-Pro-Organization-BusinessUnitLink">Acme Corp.</a></div></div><div class="ui-widget-content slick-row odd" style="top:396px"><div class="slick-cell l0 r0 align-right"><a href="#Pro-Organization-BusinessUnit/21" data-item-type="Pro.Organization.BusinessUnit" data-item-id="21" class="s-EditLink s-Pro-Organization-BusinessUnitLink">21</a></div><div class="slick-cell l1 r1"><span class="s-TreeIndent" style="width:15px"></span><span class="s-TreeToggle"></span><a href="#Pro-Organization-BusinessUnit/21" data-item-type="Pro.Organization.BusinessUnit" data-item-id="21" class="s-EditLink s-Pro-Organization-BusinessUnitLink">Master1</a></div><div class="slick-cell l2 r2"><a class="inline-action add-child-unit" title="add child unit"></a></div><div class="slick-cell l3 r3"><a href="#Pro-Organization-BusinessUnit/21" data-item-type="Pro.Organization.BusinessUnit" data-item-id="21" class="s-EditLink s-Pro-Organization-BusinessUnitLink">Acme Corp.</a></div></div><div class="ui-widget-content slick-row even" style="top:432px"><div class="slick-cell l0 r0 align-right"><a href="#Pro-Organization-BusinessUnit/22" data-item-type="Pro.Organization.BusinessUnit" data-item-id="22" class="s-EditLink s-Pro-Organization-BusinessUnitLink">22</a></div><div class="slick-cell l1 r1"><span class="s-TreeIndent" style="width:15px"></span><span class="s-TreeToggle"></span><a href="#Pro-Organization-BusinessUnit/22" data-item-type="Pro.Organization.BusinessUnit" data-item-id="22" class="s-EditLink s-Pro-Organization-BusinessUnitLink">Master1</a></div><div class="slick-cell l2 r2"><a class="inline-action add-child-unit" title="add child unit"></a></div><div class="slick-cell l3 r3"><a href="#Pro-Organization-BusinessUnit/22" data-item-type="Pro.Organization.BusinessUnit" data-item-id="22" class="s-EditLink s-Pro-Organization-BusinessUnitLink">Acme Corp.</a></div></div><div class="ui-widget-content slick-row odd" style="top:468px"><div class="slick-cell l0 r0 align-right"><a href="#Pro-Organization-BusinessUnit/23" data-item-type="Pro.Organization.BusinessUnit" data-item-id="23" class="s-EditLink s-Pro-Organization-BusinessUnitLink">23</a></div><div class="slick-cell l1 r1"><span class="s-TreeIndent" style="width:15px"></span><span class="s-TreeToggle"></span><a href="#Pro-Organization-BusinessUnit/23" data-item-type="Pro.Organization.BusinessUnit" data-item-id="23" class="s-EditLink s-Pro-Organization-BusinessUnitLink">Master1</a></div><div class="slick-cell l2 r2"><a class="inline-action add-child-unit" title="add child unit"></a></div><div class="slick-cell l3 r3"><a href="#Pro-Organization-BusinessUnit/23" data-item-type="Pro.Organization.BusinessUnit" data-item-id="23" class="s-EditLink s-Pro-Organization-BusinessUnitLink">Acme Corp.</a></div></div><div class="ui-widget-content slick-row even" style="top:504px"><div class="slick-cell l0 r0 align-right"><a href="#Pro-Organization-BusinessUnit/24" data-item-type="Pro.Organization.BusinessUnit" data-item-id="24" class="s-EditLink s-Pro-Organization-BusinessUnitLink">24</a></div><div class="slick-cell l1 r1"><span class="s-TreeIndent" style="width:15px"></span><span class="s-TreeToggle"></span><a href="#Pro-Organization-BusinessUnit/24" data-item-type="Pro.Organization.BusinessUnit" data-item-id="24" class="s-EditLink s-Pro-Organization-BusinessUnitLink">Master1</a></div><div class="slick-cell l2 r2"><a class="inline-action add-child-unit" title="add child unit"></a></div><div class="slick-cell l3 r3"><a href="#Pro-Organization-BusinessUnit/24" data-item-type="Pro.Organization.BusinessUnit" data-item-id="24" class="s-EditLink s-Pro-Organization-BusinessUnitLink">Acme Corp.</a></div></div><div class="ui-widget-content slick-row odd" style="top:540px"><div class="slick-cell l0 r0 align-right"><a href="#Pro-Organization-BusinessUnit/25" data-item-type="Pro.Organization.BusinessUnit" data-item-id="25" class="s-EditLink s-Pro-Organization-BusinessUnitLink">25</a></div><div class="slick-cell l1 r1"><span class="s-TreeIndent" style="width:15px"></span><span class="s-TreeToggle"></span><a href="#Pro-Organization-BusinessUnit/25" data-item-type="Pro.Organization.BusinessUnit" data-item-id="25" class="s-EditLink s-Pro-Organization-BusinessUnitLink">Master1</a></div><div class="slick-cell l2 r2"><a class="inline-action add-child-unit" title="add child unit"></a></div><div class="slick-cell l3 r3"><a href="#Pro-Organization-BusinessUnit/25" data-item-type="Pro.Organization.BusinessUnit" data-item-id="25" class="s-EditLink s-Pro-Organization-BusinessUnitLink">Acme Corp.</a></div></div><div class="ui-widget-content slick-row even" style="top:576px"><div class="slick-cell l0 r0 align-right"><a href="#Pro-Organization-BusinessUnit/26" data-item-type="Pro.Organization.BusinessUnit" data-item-id="26" class="s-EditLink s-Pro-Organization-BusinessUnitLink">26</a></div><div class="slick-cell l1 r1"><span class="s-TreeIndent" style="width:15px"></span><span class="s-TreeToggle"></span><a href="#Pro-Organization-BusinessUnit/26" data-item-type="Pro.Organization.BusinessUnit" data-item-id="26" class="s-EditLink s-Pro-Organization-BusinessUnitLink">Master1</a></div><div class="slick-cell l2 r2"><a class="inline-action add-child-unit" title="add child unit"></a></div><div class="slick-cell l3 r3"><a href="#Pro-Organization-BusinessUnit/26" data-item-type="Pro.Organization.BusinessUnit" data-item-id="26" class="s-EditLink s-Pro-Organization-BusinessUnitLink">Acme Corp.</a></div></div><div class="ui-widget-content slick-row odd" style="top:612px"><div class="slick-cell l0 r0 align-right"><a href="#Pro-Organization-BusinessUnit/9" data-item-type="Pro.Organization.BusinessUnit" data-item-id="9" class="s-EditLink s-Pro-Organization-BusinessUnitLink">9</a></div><div class="slick-cell l1 r1"><span class="s-TreeIndent" style="width:15px"></span><span class="s-TreeToggle s-TreeCollapse"></span><a href="#Pro-Organization-BusinessUnit/9" data-item-type="Pro.Organization.BusinessUnit" data-item-id="9" class="s-EditLink s-Pro-Organization-BusinessUnitLink">Operations</a></div><div class="slick-cell l2 r2"><a class="inline-action add-child-unit" title="add child unit"></a></div><div class="slick-cell l3 r3"><a href="#Pro-Organization-BusinessUnit/9" data-item-type="Pro.Organization.BusinessUnit" data-item-id="9" class="s-EditLink s-Pro-Organization-BusinessUnitLink">Acme Corp.</a></div></div><div class="ui-widget-content slick-row even" style="top:648px"><div class="slick-cell l0 r0 align-right"><a href="#Pro-Organization-BusinessUnit/10" data-item-type="Pro.Organization.BusinessUnit" data-item-id="10" class="s-EditLink s-Pro-Organization-BusinessUnitLink">10</a></div><div class="slick-cell l1 r1"><span class="s-TreeIndent" style="width:30px"></span><span class="s-TreeToggle"></span><a href="#Pro-Organization-BusinessUnit/10" data-item-type="Pro.Organization.BusinessUnit" data-item-id="10" class="s-EditLink s-Pro-Organization-BusinessUnitLink">Branding</a></div><div class="slick-cell l2 r2"><a class="inline-action add-child-unit" title="add child unit"></a></div><div class="slick-cell l3 r3"><a href="#Pro-Organization-BusinessUnit/10" data-item-type="Pro.Organization.BusinessUnit" data-item-id="10" class="s-EditLink s-Pro-Organization-BusinessUnitLink">Operations</a></div></div></div></div><div class="slick-footerrow ui-state-default" style="display: none"><div class="slick-footerrow-columns" style="width: 782px;"><div class="slick-footerrow-column l0 r0 ui-state-default align-right" data-c="0"></div><div class="slick-footerrow-column l1 r1 ui-state-default" data-c="1"></div><div class="slick-footerrow-column l2 r2 ui-state-default" data-c="2"></div><div class="slick-footerrow-column l3 r3 ui-state-default" data-c="3"></div></div><div style="display: block; height: 1px; position: absolute; top: 0px; left: 0px; width: 788px;" width="788px"></div></div><div class="slick-focus-sink" hidefocus="" style="position:fixed;width:0!important;height:0!important;top:0;left:0;outline:0!important;" tabindex="0"></div></div></div>
+
+<script type="text/javascript">
+    jQuery(function () {
+        new Serenity.Pro.Organization.BusinessUnitGrid($('#GridDiv'), {}).init();
+
+        Q.initFullHeightGridPage($('#GridDiv'));
+    });
+</script>
+        </section>
+    </main>
+
+<div id="cboxOverlay" style="display: none;"></div><div id="colorbox" class="" role="dialog" tabindex="-1" style="display: none;"><div id="cboxWrapper"><div><div id="cboxTopLeft" style="float: left;"></div><div id="cboxTopCenter" style="float: left;"></div><div id="cboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxMiddleLeft" style="float: left;"></div><div id="cboxContent" style="float: left;"><div id="cboxTitle" style="float: left;"></div><div id="cboxCurrent" style="float: left;"></div><button type="button" id="cboxPrevious"></button><button type="button" id="cboxNext"></button><button id="cboxSlideshow"></button><div id="cboxLoadingOverlay" style="float: left;"></div><div id="cboxLoadingGraphic" style="float: left;"></div></div><div id="cboxMiddleRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxBottomLeft" style="float: left;"></div><div id="cboxBottomCenter" style="float: left;"></div><div id="cboxBottomRight" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none; max-width: none;"></div></div><span role="status" aria-live="polite" class="select2-hidden-accessible">Administration</span><div tabindex="-1" role="dialog" class="ui-dialog ui-corner-all ui-widget ui-widget-content ui-front s-Dialog s-Serenity-Pro-Organization-BusinessUnitDialog s-Pro-Organization-BusinessUnitDialog s-BusinessUnitDialog ui-draggable ui-resizable flex-layout" aria-describedby="Serenity_Pro_Organization_BusinessUnitDialog3" aria-labelledby="ui-id-1" style="position: absolute; height: auto; width: 920px; top: 244.75px; left: 304.2px; z-index: 1032;"><div class="ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle"><span id="ui-id-1" class="ui-dialog-title">Nuevo Business Unit</span><button type="button" class="ui-dialog-titlebar-close"><i class="fa fa-times"></i></button></div><div class="s-TemplatedDialog ui-dialog-content ui-widget-content" id="Serenity_Pro_Organization_BusinessUnitDialog3" style="width: auto; min-height: 73.6px; max-height: none; height: auto;"><div class="s-DialogContent">
+    <div id="Serenity_Pro_Organization_BusinessUnitDialog3_Toolbar" class="s-DialogToolbar s-Serenity-Toolbar s-Toolbar clearfix"><div class="tool-buttons"><div class="buttons-outer"><div class="buttons-inner"><div class="tool-button save-and-close-button icon-tool-button"><div class="button-outer"><span class="button-inner"><i class="fa fa-check-circle text-purple"></i> Guardar</span></div></div><div class="tool-button apply-changes-button icon-tool-button" title="Aplicar cambios"><div class="button-outer"><span class="button-inner"><i class="fa fa-clipboard-check text-purple"></i> </span></div></div><div class="tool-button delete-button icon-tool-button" style="display: none;"><div class="button-outer"><span class="button-inner"><i class="fa fa-trash-o text-red"></i> Borrar</span></div></div><div class="tool-button undo-delete-button" style="display: none;"><div class="button-outer"><span class="button-inner">Recuperar</span></div></div><div class="tool-button localization-button" style="display: none;"><div class="button-outer"><span class="button-inner">Localización</span></div></div><div class="tool-button clone-button icon-tool-button" style="display: none;"><div class="button-outer"><span class="button-inner"><i class="fa fa-clone"></i> Clonar</span></div></div></div></div></div></div>
+    <div class="s-Form">
+        <form id="Serenity_Pro_Organization_BusinessUnitDialog3_Form" action="" novalidate="novalidate">
+            <div class="fieldset">
+                <div id="Serenity_Pro_Organization_BusinessUnitDialog3_PropertyGrid" class="s-Serenity-PropertyGrid s-PropertyGrid"><div class="categories"><div class="category"><div class="field Name"><label class="caption" for="Serenity_Pro_Organization_BusinessUnitDialog3_Name" title="Name"><sup title="Se requiere este campo">*</sup>Name</label><input type="text" class="editor s-Serenity-StringEditor s-StringEditor required valid" id="Serenity_Pro_Organization_BusinessUnitDialog3_Name" name="Name" maxlength="100" aria-invalid="false"><div class="vx"><label id="Serenity_Pro_Organization_BusinessUnitDialog3_Name-error" class="error checked" for="Serenity_Pro_Organization_BusinessUnitDialog3_Name" title="" style="display: inline-block;"></label></div><div class="clear"></div></div><div class="field ParentUnitId"><label class="caption" for="Serenity_Pro_Organization_BusinessUnitDialog3_ParentUnitId" title="Parent Unit">Parent Unit</label><div class="select2-container editor s-Serenity-Pro-Organization-BusinessUnitEditor s-Pro-Organization-BusinessUnitEditor s-BusinessUnitEditor select2-dropdown-open select2-container-active" id="s2id_Serenity_Pro_Organization_BusinessUnitDialog3_ParentUnitId"><a href="javascript:void(0)" class="select2-choice select2-default" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-1">--seleccionar--</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen1" class="select2-offscreen">Parent Unit</label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-1" id="s2id_autogen1" disabled=""></div><input type="text" class="editor s-Serenity-Pro-Organization-BusinessUnitEditor s-Pro-Organization-BusinessUnitEditor s-BusinessUnitEditor select2-offscreen" id="Serenity_Pro_Organization_BusinessUnitDialog3_ParentUnitId" name="ParentUnitId" placeholder="--seleccionar--" tabindex="-1" title="Parent Unit"><div class="vx"></div><div class="clear"></div></div></div></div></div>
+                <div class="clear"></div>
+            </div>
+        </form> 
+    </div>
+</div></div><div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-sw" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-ne" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90;"></div></div><div class="ui-widget-overlay ui-front" style="z-index: 1031;"></div><div id="select2-drop-mask" class="select2-drop-mask" style=""></div><div class="select2-drop select2-display-none select2-with-searchbox select2-drop-active" id="select2-drop" style="left: 489.3px; width: 711.2px; top: 441.45px; bottom: auto; display: block;">   <div class="select2-search">       <label for="s2id_autogen1_search" class="select2-offscreen">Parent Unit</label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input select2-focused" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-1" id="s2id_autogen1_search" placeholder="" aria-activedescendant="select2-result-label-3">   </div>   <ul class="select2-results" role="listbox" id="select2-results-1"><li class="select2-results-dept-0 select2-result select2-result-selectable" role="presentation"><div class="select2-result-label" id="select2-result-label-2" role="option"><span class="select2-match"></span>Acme Corp.</div></li><li class="select2-results-dept-0 select2-result select2-result-selectable select2-highlighted" role="presentation"><div class="select2-result-label" id="select2-result-label-3" role="option"><span class="select2-match"></span>Administration</div></li><li class="select2-results-dept-0 select2-result select2-result-selectable" role="presentation"><div class="select2-result-label" id="select2-result-label-4" role="option"><span class="select2-match"></span>Operations » Branding</div></li><li class="select2-results-dept-0 select2-result select2-result-selectable" role="presentation"><div class="select2-result-label" id="select2-result-label-5" role="option"><span class="select2-match"></span>Technology » Design</div></li><li class="select2-results-dept-0 select2-result select2-result-selectable" role="presentation"><div class="select2-result-label" id="select2-result-label-6" role="option"><span class="select2-match"></span>Marketing » Editor Team</div></li><li class="select2-results-dept-0 select2-result select2-result-selectable" role="presentation"><div class="select2-result-label" id="select2-result-label-7" role="option"><span class="select2-match"></span>Administration » Finance</div></li><li class="select2-results-dept-0 select2-result select2-result-selectable" role="presentation"><div class="select2-result-label" id="select2-result-label-8" role="option"><span class="select2-match"></span>Administration » Human Resources</div></li><li class="select2-results-dept-0 select2-result select2-result-selectable" role="presentation"><div class="select2-result-label" id="select2-result-label-9" role="option"><span class="select2-match"></span>Marketing</div></li><li class="select2-results-dept-0 select2-result select2-result-selectable" role="presentation"><div class="select2-result-label" id="select2-result-label-10" role="option"><span class="select2-match"></span>Marketing » Marketing Strategies</div></li><li class="select2-results-dept-0 select2-result select2-result-selectable" role="presentation"><div class="select2-result-label" id="select2-result-label-11" role="option"><span class="select2-match"></span>Master1</div></li><li class="select2-results-dept-0 select2-result select2-result-selectable" role="presentation"><div class="select2-result-label" id="select2-result-label-12" role="option"><span class="select2-match"></span>Master1</div></li><li class="select2-results-dept-0 select2-result select2-result-selectable" role="presentation"><div class="select2-result-label" id="select2-result-label-13" role="option"><span class="select2-match"></span>Master1</div></li><li class="select2-results-dept-0 select2-result select2-result-selectable" role="presentation"><div class="select2-result-label" id="select2-result-label-14" role="option"><span class="select2-match"></span>Master1</div></li><li class="select2-results-dept-0 select2-result select2-result-selectable" role="presentation"><div class="select2-result-label" id="select2-result-label-15" role="option"><span class="select2-match"></span>Master1</div></li><li class="select2-results-dept-0 select2-result select2-result-selectable" role="presentation"><div class="select2-result-label" id="select2-result-label-16" role="option"><span class="select2-match"></span>Master1</div></li><li class="select2-results-dept-0 select2-result select2-result-selectable" role="presentation"><div class="select2-result-label" id="select2-result-label-17" role="option"><span class="select2-match"></span>Master1</div></li><li class="select2-results-dept-0 select2-result select2-result-selectable" role="presentation"><div class="select2-result-label" id="select2-result-label-18" role="option"><span class="select2-match"></span>Master1</div></li><li class="select2-results-dept-0 select2-result select2-result-selectable" role="presentation"><div class="select2-result-label" id="select2-result-label-19" role="option"><span class="select2-match"></span>Master1</div></li><li class="select2-results-dept-0 select2-result select2-result-selectable" role="presentation"><div class="select2-result-label" id="select2-result-label-20" role="option"><span class="select2-match"></span>Operations</div></li><li class="select2-results-dept-0 select2-result select2-result-selectable" role="presentation"><div class="select2-result-label" id="select2-result-label-21" role="option"><span class="select2-match"></span>Operations » Partnership</div></li><li class="select2-results-dept-0 select2-result select2-result-selectable" role="presentation"><div class="select2-result-label" id="select2-result-label-22" role="option"><span class="select2-match"></span>Marketing » Public Relations</div></li><li class="select2-results-dept-0 select2-result select2-result-selectable" role="presentation"><div class="select2-result-label" id="select2-result-label-23" role="option"><span class="select2-match"></span>Technology » R&amp;D</div></li><li class="select2-results-dept-0 select2-result select2-result-selectable" role="presentation"><div class="select2-result-label" id="select2-result-label-24" role="option"><span class="select2-match"></span>Operations » Reporting</div></li><li class="select2-results-dept-0 select2-result select2-result-selectable" role="presentation"><div class="select2-result-label" id="select2-result-label-25" role="option"><span class="select2-match"></span>Operations » Sales</div></li><li class="select2-results-dept-0 select2-result select2-result-selectable" role="presentation"><div class="select2-result-label" id="select2-result-label-26" role="option"><span class="select2-match"></span>Technology</div></li><li class="select2-results-dept-0 select2-result select2-result-selectable" role="presentation"><div class="select2-result-label" id="select2-result-label-27" role="option"><span class="select2-match"></span>Technology » Test</div></li></ul></div></body></html>

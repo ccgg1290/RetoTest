@@ -1,0 +1,60 @@
+version '1.0-SNAPSHOT'
+
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+buildscript {
+    repositories {
+        mavenLocal()
+        mavenCentral()
+    }
+    dependencies {
+        classpath("net.serenity-bdd:serenity-gradle-plugin:2.4.4")
+    }
+}
+ext{
+    serenityVersion = '3.0.0'
+}
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'java-gradle-plugin'
+apply plugin: 'idea'
+apply plugin: 'net.serenity-bdd.aggregator'
+
+
+compileJava {
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+}
+
+configurations.all {
+    resolutionStrategy {
+        force 'net.serenity-bdd:serenity-core:2.6.0'
+        force 'net.serenity-bdd:serenity-junit:2.6.0'
+        force 'net.serenity-bdd:serenity-ensure:2.6.0'
+        force 'net.serenity-bdd:serenity-cucumber6:2.6.0'
+        force 'net.serenity-bdd:serenity-screenplay:2.2.9'
+        force 'net.serenity-bdd:serenity-screenplay-webdriver:2.2.9'
+        force 'io.cucumber:cucumber-core:6.10.4'
+        force 'io.cucumber:cucumber-junit:6.10.4'
+    }
+}
+
+dependencies {
+    implementation 'net.serenity-bdd:serenity-core:3.1.13'
+    implementation 'net.serenity-bdd:serenity-junit:3.1.13'
+    implementation 'net.serenity-bdd:serenity-ensure:3.1.13'
+    implementation 'net.serenity-bdd:serenity-cucumber6:2.6.0'
+    implementation 'net.serenity-bdd:serenity-screenplay:3.1.13'
+    implementation 'net.serenity-bdd:serenity-screenplay-webdriver:3.1.13'
+    implementation 'io.cucumber:cucumber-core:6.10.4'
+    implementation 'io.cucumber:cucumber-junit:6.10.4'
+    implementation 'org.reflections:reflections:0.10.2'
+}
+group 'co.com.choucair.certificacion'
+
+test {
+    systemProperties = System.properties
+}

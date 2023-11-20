@@ -1,0 +1,451 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.20/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.20/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.10.20/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.20/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.20/datatables.bootstrap4.min.css" rel="stylesheet" />
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">Reto Project</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="2c2d1dc804b877c39135235c389f85d0c6722df454bd00c2ac7752904f1e5da5.html">New Meeting</a></span>
+                > <span class="truncate-60"><a
+                    href="4a40759475ca760a9142fff9801e7cb9c34c414353c002ecd8497dcb895efcd5.html">schedule a meet </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 29-09-2023 19:41</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">New Meeting </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="cb962eeb00917ee76bb99138abb60a99d3818f0b48cf90e290a66f7e21f13332.html">Meet
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="failing-color">schedule a meet
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">Given I want to schedule a new meet<br>When login to Startsharp go to schedule it<br><table class='embedded'><thead><th>user</th><th>pass</th><th>unitName</th><th>unitOption</th><th>meetingName</th><th>meetingType</th><th>meetingNumber</th><th>meetingDate</th><th>initHour</th><th>endHour</th><th>location</th><th>person</th></thead><tbody><tr><td>&lt;user&gt;</td><td>&lt;pass&gt;</td><td>&lt;unitName&gt;</td><td>&lt;unitOption&gt;</td><td>&lt;meetingName&gt;</td><td>&lt;meetingType&gt;</td><td>&lt;meetingNumber&gt;</td><td>&lt;meetingDate&gt;</td><td>&lt;initHour&gt;</td><td>&lt;endHour&gt;</td><td>&lt;location&gt;</td><td>&lt;person&gt;</td></tr></tbody></table><br>Then the virtual meet is correctly created<br><table class='embedded'><tbody><tr><td>meetingName</td></tr><tr><td>&lt;meetingName&gt;</td></tr></tbody></table></div>
+    </div>
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Element should be enabled exception: Expected enabled element was not enabled</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>co.com.choucair.certificacion.serenityis.interactions.SelectInTheList.performAs(SelectInTheList.java:25)<br />co.com.choucair.certificacion.serenityis.tasks.Meeting.performAs(Meeting.java:62)<br />co.com.choucair.certificacion.serenityis.stepdefinitions.StarSharpStepDefinitions.loginToStartsharpGoToScheduleIt(StarSharpStepDefinitions.java:38)<br />io.cucumber.java.Invoker.doInvoke(Invoker.java:66)<br />io.cucumber.java.Invoker.invoke(Invoker.java:24)<br />io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)<br />io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)<br />io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)<br />io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)<br />io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)<br />io.cucumber.core.runner.TestStep.run(TestStep.java:64)<br />io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)<br />io.cucumber.core.runner.TestCase.run(TestCase.java:104)<br />io.cucumber.core.runner.Runner.runPickle(Runner.java:73)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:258)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:57)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)<br /></pre>
+                    </div>
+
+                    <h4>
+                        Caused by: org.openqa.selenium.TimeoutException
+                    </h4>
+                    <div>
+                            <pre>Expected condition failed: waiting for By.xpath: //div[@id='select2-drop']//ul//li/div[contains(text(),'Aaron Taylor1')] to be enabled (tried for 5 second(s) with 100 milliseconds interval)</pre>
+                        <pre>co.com.choucair.certificacion.serenityis.interactions.SelectInTheList.performAs(SelectInTheList.java :25)<br />co.com.choucair.certificacion.serenityis.tasks.Meeting.performAs(Meeting.java :62)<br />co.com.choucair.certificacion.serenityis.stepdefinitions.StarSharpStepDefinitions.loginToStartsharpGoToScheduleIt(StarSharpStepDefinitions.java :38)<br />io.cucumber.java.Invoker.doInvoke(Invoker.java :66)<br />io.cucumber.java.Invoker.invoke(Invoker.java :24)<br />io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java :47)<br />io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java :29)<br />io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java :66)<br />io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java :63)<br />io.cucumber.core.runner.TestStep.executeStep(TestStep.java :92)<br />io.cucumber.core.runner.TestStep.run(TestStep.java :64)<br />io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java :51)<br />io.cucumber.core.runner.TestCase.run(TestCase.java :104)<br />io.cucumber.core.runner.Runner.runPickle(Runner.java :73)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java :135)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java :27)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java :258)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java :57)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java :69)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java :74)<br /></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                <div class="panel-body">
+                    <a href="pagesource18241619468769066337.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="a808e382adc1fded661d97dcbc0915de63122ee1719bb21a75b732b7f4e2cf5d.png" title=" 1: schedule a meet ({user=admin, pass=serenity, unitName=Master, unitOption=Acme Corp., meetingName=MyMeet, meetingType=General, meetingNumber=12022, meetingDate=10/12/2022, initHour=14:00, endHour=15:00, location=On Site, person=Aaron Taylor, =})" width="1920"/>
+                <img src="a808e382adc1fded661d97dcbc0915de63122ee1719bb21a75b732b7f4e2cf5d.png" title=" Given I want to schedule a new meet" width="1920"/>
+                <img src="a808e382adc1fded661d97dcbc0915de63122ee1719bb21a75b732b7f4e2cf5d.png" title=" Cristian opens the https://serenity.is/demo/" width="1920"/>
+                <img src="a808e382adc1fded661d97dcbc0915de63122ee1719bb21a75b732b7f4e2cf5d.png" title=" Given I want to schedule a new meet (completed)" width="1920"/>
+                <img src="a808e382adc1fded661d97dcbc0915de63122ee1719bb21a75b732b7f4e2cf5d.png" title=" When login to Startsharp go to schedule it
+| user | pass | unitName | unitOption | meetingName | meetingType | meetingNumber | meetingDate | initHour | endHour | location | person |
+| admin | serenity | Master | Acme Corp. | MyMeet | General | 12022 | 10/12/2022 | 14:00 | 15:00 | On Site | Aaron Taylor |" width="1920"/>
+                <img src="a808e382adc1fded661d97dcbc0915de63122ee1719bb21a75b732b7f4e2cf5d.png" title=" Cristian logins" width="1920"/>
+                <img src="a808e382adc1fded661d97dcbc0915de63122ee1719bb21a75b732b7f4e2cf5d.png" title=" Cristian enters 'admin' into input the user" width="1920"/>
+                <img src="a1ab5640423a8d424054ce24b3a29c007d217157718512da046c2c2edb2e445b.png" title=" Cristian enters 'admin' into input the user (completed)" width="1920"/>
+                <img src="88005e9022d2ff12f53f7764321c0e26bf1f30eac9dad009ea87345200041b08.png" title=" Cristian enters 'serenity' into input the password" width="1920"/>
+                <img src="b5b294153212cb077ddc8bbaa8e9c41a8c463e13efb913faecbf678b715867a4.png" title=" Cristian enters 'serenity' into input the password (completed)" width="1920"/>
+                <img src="b5b294153212cb077ddc8bbaa8e9c41a8c463e13efb913faecbf678b715867a4.png" title=" Cristian clicks on button to submit" width="1920"/>
+                <img src="dae30f490ca465a384e394744b156fbff74cc34ad246db241972c0bb3c1fbe9d.png" title=" Cristian clicks on button to submit (completed)" width="1920"/>
+                <img src="dae30f490ca465a384e394744b156fbff74cc34ad246db241972c0bb3c1fbe9d.png" title=" Cristian logins (completed)" width="1920"/>
+                <img src="dae30f490ca465a384e394744b156fbff74cc34ad246db241972c0bb3c1fbe9d.png" title=" Cristian algo hace" width="1920"/>
+                <img src="ee992c64e631ac47da7610486f017183c91d34a86eaf5581cce8f3b74e7cc92b.png" title=" Cristian clicks on organization section" width="1920"/>
+                <img src="a0408ac487a79956a304e53893d6035338da8aa7da4ad8e105b160fac74cb9fb.png" title=" Cristian clicks on organization section (completed)" width="1920"/>
+                <img src="a0408ac487a79956a304e53893d6035338da8aa7da4ad8e105b160fac74cb9fb.png" title=" Cristian clicks on business section" width="1920"/>
+                <img src="7b9de9ad14b923e1d0984e488758198ea03e3e399d0c5356f1f3efe35f64b3a5.png" title=" Cristian clicks on business section (completed)" width="1920"/>
+                <img src="128566f32b939da36134486275e8fd0cffab3dae2990ffe864b117a2943b9999.png" title=" Cristian clicks on new business unit" width="1920"/>
+                <img src="62f946b1ff7f9fb1f56a6f90a2fd2b9ebb1ccca90fa8f5641f45fa5d23e8b126.png" title=" Cristian clicks on new business unit (completed)" width="1920"/>
+                <img src="b57da454b033fef9db9231f73af9d37f2a5a65e2afdc3fe88fb01a491a21beca.png" title=" Cristian enters 'Master' into input the name business unit" width="1920"/>
+                <img src="8c5d0a3109abd7756b4cbb1858b8b7368d03c22ef11dd290cbefa3b073c39ece.png" title=" Cristian enters 'Master' into input the name business unit (completed)" width="1920"/>
+                <img src="8c5d0a3109abd7756b4cbb1858b8b7368d03c22ef11dd290cbefa3b073c39ece.png" title=" Cristian select in the list the option 'Acme Corp.'" width="1920"/>
+                <img src="8c5d0a3109abd7756b4cbb1858b8b7368d03c22ef11dd290cbefa3b073c39ece.png" title=" Cristian clicks on select the parent" width="1920"/>
+                <img src="451b0eaa1c19b4087f26ae8b5f3a0f5ddee9d8438a43d849f69dafcf40d84012.png" title=" Cristian clicks on select the parent (completed)" width="1920"/>
+                <img src="451b0eaa1c19b4087f26ae8b5f3a0f5ddee9d8438a43d849f69dafcf40d84012.png" title=" Cristian clicks on select in the list the parent" width="1920"/>
+                <img src="be898a57d1e54c42ec68c38b31d31b7c69992edf03733115850a06372583b1fa.png" title=" Cristian clicks on select in the list the parent (completed)" width="1920"/>
+                <img src="be898a57d1e54c42ec68c38b31d31b7c69992edf03733115850a06372583b1fa.png" title=" Cristian select in the list the option 'Acme Corp.' (completed)" width="1920"/>
+                <img src="be898a57d1e54c42ec68c38b31d31b7c69992edf03733115850a06372583b1fa.png" title=" Cristian clicks on save the new unit" width="1920"/>
+                <img src="78271a7c583d205a95322f1fcecd88f41d536769da40efc1b090cd8066ddc50a.png" title=" Cristian clicks on save the new unit (completed)" width="1920"/>
+                <img src="78271a7c583d205a95322f1fcecd88f41d536769da40efc1b090cd8066ddc50a.png" title=" Cristian algo hace (completed)" width="1920"/>
+                <img src="78271a7c583d205a95322f1fcecd88f41d536769da40efc1b090cd8066ddc50a.png" title=" Cristian meeting" width="1920"/>
+                <img src="921dd4d23b718133766a21e07788680ec56fdf429ed0b2e79be76171c6ea385a.png" title=" Cristian clicks on meeting section" width="1920"/>
+                <img src="0280102a05e0abc0cf02dbb95a989a73d2a8f398a8a32a79de194453ed5433f3.png" title=" Cristian clicks on meeting section (completed)" width="1920"/>
+                <img src="0280102a05e0abc0cf02dbb95a989a73d2a8f398a8a32a79de194453ed5433f3.png" title=" Cristian clicks on meeting meetings" width="1920"/>
+                <img src="a4aa87120e71e8318043c4f26d8e59fd576eae83352ff9c4f60eb27a8bc22a7e.png" title=" Cristian clicks on meeting meetings (completed)" width="1920"/>
+                <img src="5c78c5a8bdc15a2c4a1e7b5b1ea45ccc5b30b514b24a48a76019fe39d692444a.png" title=" Cristian clicks on new business unit" width="1920"/>
+                <img src="b66b026f0a4c0e0754a2ce1f6a1900501e6e6031ad892d07e5742c8d395fa90a.png" title=" Cristian clicks on new business unit (completed)" width="1920"/>
+                <img src="71233b43e8351681362982f44b686ea1615d6ffcda47d8a4eaa3036de72e7713.png" title=" Cristian enters 'MyMeet' into put the meeting name" width="1920"/>
+                <img src="c403d3013c6eedf00d699d651ad1b46620569aab50cc1a17e5a9c995b8cae709.png" title=" Cristian enters 'MyMeet' into put the meeting name (completed)" width="1920"/>
+                <img src="c403d3013c6eedf00d699d651ad1b46620569aab50cc1a17e5a9c995b8cae709.png" title=" Cristian select in the list the option 'General'" width="1920"/>
+                <img src="c403d3013c6eedf00d699d651ad1b46620569aab50cc1a17e5a9c995b8cae709.png" title=" Cristian clicks on enable the list select meeting type" width="1920"/>
+                <img src="d9afce7f89a479b612aaeee7d436b4c74fb6f65e6e82ae42e1b14dd95c94de68.png" title=" Cristian clicks on enable the list select meeting type (completed)" width="1920"/>
+                <img src="d9afce7f89a479b612aaeee7d436b4c74fb6f65e6e82ae42e1b14dd95c94de68.png" title=" Cristian clicks on select in the list the parent" width="1920"/>
+                <img src="b81ce3b0e1a055c3bd1434daacefb5831b9a69bb913e8b186c0e9271f7d73f16.png" title=" Cristian clicks on select in the list the parent (completed)" width="1920"/>
+                <img src="b81ce3b0e1a055c3bd1434daacefb5831b9a69bb913e8b186c0e9271f7d73f16.png" title=" Cristian select in the list the option 'General' (completed)" width="1920"/>
+                <img src="b81ce3b0e1a055c3bd1434daacefb5831b9a69bb913e8b186c0e9271f7d73f16.png" title=" Cristian enters '12022' into meeting number" width="1920"/>
+                <img src="d62858b0ef112603f6d2fcc49478bbd70c76f50443f3070842aefc8c619e5098.png" title=" Cristian enters '12022' into meeting number (completed)" width="1920"/>
+                <img src="d62858b0ef112603f6d2fcc49478bbd70c76f50443f3070842aefc8c619e5098.png" title=" Cristian enters '10/12/2022' into start date meeting" width="1920"/>
+                <img src="913fc6e25fd820c42b02ff5a125964a2b4d331da46ed2673a38ba55da1327eec.png" title=" Cristian enters '10/12/2022' into start date meeting (completed)" width="1920"/>
+                <img src="913fc6e25fd820c42b02ff5a125964a2b4d331da46ed2673a38ba55da1327eec.png" title=" Cristian selects 14:00 in select start hour" width="1920"/>
+                <img src="b620396f8b24fc5f24cd0c314077038102f3b172f31182ee0d924d421dfc7b2b.png" title=" Cristian selects 14:00 in select start hour (completed)" width="1920"/>
+                <img src="b620396f8b24fc5f24cd0c314077038102f3b172f31182ee0d924d421dfc7b2b.png" title=" Cristian enters '10/12/2022' into end date meeting" width="1920"/>
+                <img src="4d5c12591abe20b46db9aa877761d120089be93e6f88f093ef70348b14ec9144.png" title=" Cristian enters '10/12/2022' into end date meeting (completed)" width="1920"/>
+                <img src="4d5c12591abe20b46db9aa877761d120089be93e6f88f093ef70348b14ec9144.png" title=" Cristian selects 15:00 in select start hour" width="1920"/>
+                <img src="21a8fdf90f1b93df1420f43fb2316b10ade5fa2c4b335aa63175c16c1e624279.png" title=" Cristian selects 15:00 in select start hour (completed)" width="1920"/>
+                <img src="3f9b386ee86087aabaf4934256925b586e0ccee9c6f8f05b82698d2206ccf72d.png" title=" Cristian select in the list the option 'On Site'" width="1920"/>
+                <img src="3f9b386ee86087aabaf4934256925b586e0ccee9c6f8f05b82698d2206ccf72d.png" title=" Cristian clicks on location" width="1920"/>
+                <img src="79c3677f6164fe419d1474c72a3ab47199fa5d37fe53ba40d1c0fc78afc98b9a.png" title=" Cristian clicks on location (completed)" width="1920"/>
+                <img src="79c3677f6164fe419d1474c72a3ab47199fa5d37fe53ba40d1c0fc78afc98b9a.png" title=" Cristian clicks on select in the list the parent" width="1920"/>
+                <img src="79edd8928af2b964ed8a7cff1d323dd6c6d306e416b82e0ac69fca346e097ea2.png" title=" Cristian clicks on select in the list the parent (completed)" width="1920"/>
+                <img src="79edd8928af2b964ed8a7cff1d323dd6c6d306e416b82e0ac69fca346e097ea2.png" title=" Cristian select in the list the option 'On Site' (completed)" width="1920"/>
+                <img src="79edd8928af2b964ed8a7cff1d323dd6c6d306e416b82e0ac69fca346e097ea2.png" title=" Cristian select in the list the option 'Master'" width="1920"/>
+                <img src="79edd8928af2b964ed8a7cff1d323dd6c6d306e416b82e0ac69fca346e097ea2.png" title=" Cristian clicks on location" width="1920"/>
+                <img src="2781e80868f6a1369e4724e685925bca021923c5d8cda67694faa7eaf367431d.png" title=" Cristian clicks on location (completed)" width="1920"/>
+                <img src="2781e80868f6a1369e4724e685925bca021923c5d8cda67694faa7eaf367431d.png" title=" Cristian clicks on select in the list the parent" width="1920"/>
+                <img src="a468cae4cd98ef8ed067031db656bf75a2ffd601be384a215f64abbd22ead6f2.png" title=" Cristian clicks on select in the list the parent (completed)" width="1920"/>
+                <img src="a468cae4cd98ef8ed067031db656bf75a2ffd601be384a215f64abbd22ead6f2.png" title=" Cristian select in the list the option 'Master' (completed)" width="1920"/>
+                <img src="a468cae4cd98ef8ed067031db656bf75a2ffd601be384a215f64abbd22ead6f2.png" title=" Cristian select in the list the option 'Aaron Taylor'" width="1920"/>
+                <img src="a468cae4cd98ef8ed067031db656bf75a2ffd601be384a215f64abbd22ead6f2.png" title=" Cristian clicks on location" width="1920"/>
+                <img src="c0948256c3630035134e0b8de3802e41f1eebf3aa4800a6e6f35cb66cd739ef8.png" title=" Cristian clicks on location (completed)" width="1920"/>
+                <img src="c0948256c3630035134e0b8de3802e41f1eebf3aa4800a6e6f35cb66cd739ef8.png" title=" Cristian clicks on select in the list the parent" width="1920"/>
+                <img src="6853c2b16293cf212dd70a0b633974e23c3d2d57b34fdd2e191f0a4ba4cacf29.png" title=" Cristian clicks on select in the list the parent (completed)" width="1920"/>
+                <img src="6853c2b16293cf212dd70a0b633974e23c3d2d57b34fdd2e191f0a4ba4cacf29.png" title=" Cristian select in the list the option 'Aaron Taylor' (completed)" width="1920"/>
+                <img src="6853c2b16293cf212dd70a0b633974e23c3d2d57b34fdd2e191f0a4ba4cacf29.png" title=" Cristian select in the list the option 'Aaron Taylor'" width="1920"/>
+                <img src="6853c2b16293cf212dd70a0b633974e23c3d2d57b34fdd2e191f0a4ba4cacf29.png" title=" Cristian clicks on location" width="1920"/>
+                <img src="e683f908ee3b1bfcb8d4a605cbb6c49cd5193742d16010198f1cae00f15e967d.png" title=" Cristian clicks on location (completed)" width="1920"/>
+                <img src="e683f908ee3b1bfcb8d4a605cbb6c49cd5193742d16010198f1cae00f15e967d.png" title=" Cristian clicks on select in the list the parent" width="1920"/>
+                <img src="0f064d6e7fd789ff967a54a5814158911197d148d1f1fe68382f461fad3437d1.png" title=" Cristian clicks on select in the list the parent (completed)" width="1920"/>
+                <img src="0f064d6e7fd789ff967a54a5814158911197d148d1f1fe68382f461fad3437d1.png" title=" Cristian select in the list the option 'Aaron Taylor' (completed)" width="1920"/>
+                <img src="0f064d6e7fd789ff967a54a5814158911197d148d1f1fe68382f461fad3437d1.png" title=" Cristian clicks on save the new unit" width="1920"/>
+                <img src="6f3651df16d7f6f8480fa4271e78c6bf98e9d2960191e1e73c00710fb9e34fda.png" title=" Cristian clicks on save the new unit (completed)" width="1920"/>
+                <img src="257f7202d4eb836578e4e5114c38859d011e23473b4e4bd4dc8d523a0b9bc313.png" title=" Cristian meeting (completed)" width="1920"/>
+                <img src="257f7202d4eb836578e4e5114c38859d011e23473b4e4bd4dc8d523a0b9bc313.png" title=" When login to Startsharp go to schedule it
+| user | pass | unitName | unitOption | meetingName | meetingType | meetingNumber | meetingDate | initHour | endHour | location | person |
+| admin | serenity | Master | Acme Corp. | MyMeet | General | 12022 | 10/12/2022 | 14:00 | 15:00 | On Site | Aaron Taylor | (completed)" width="1920"/>
+                <img src="257f7202d4eb836578e4e5114c38859d011e23473b4e4bd4dc8d523a0b9bc313.png" title=" Then the virtual meet is correctly created
+| meetingName |
+| MyMeet |" width="1920"/>
+                <img src="257f7202d4eb836578e4e5114c38859d011e23473b4e4bd4dc8d523a0b9bc313.png" title=" Then is different message" width="1920"/>
+                <img src="257f7202d4eb836578e4e5114c38859d011e23473b4e4bd4dc8d523a0b9bc313.png" title=" Then is different message (completed)" width="1920"/>
+                <img src="257f7202d4eb836578e4e5114c38859d011e23473b4e4bd4dc8d523a0b9bc313.png" title=" Then the virtual meet is correctly created
+| meetingName |
+| MyMeet | (completed)" width="1920"/>
+                <img src="257f7202d4eb836578e4e5114c38859d011e23473b4e4bd4dc8d523a0b9bc313.png" title=" 1: schedule a meet ({user=admin, pass=serenity, unitName=Master, unitOption=Acme Corp., meetingName=MyMeet, meetingType=General, meetingNumber=12022, meetingDate=10/12/2022, initHour=14:00, endHour=15:00, location=On Site, person=Aaron Taylor, =}) (completed)" width="1920"/>
+                <img src="a808e382adc1fded661d97dcbc0915de63122ee1719bb21a75b732b7f4e2cf5d.png" title=" 2: schedule a meet ({user=admin, pass=serenity, unitName=Master, unitOption=Acme Corp., meetingName=MyMeet, meetingType=General, meetingNumber=12022, meetingDate=10/12/2022, initHour=14:00, endHour=15:00, location=On Site, person=Aaron Taylor1, =})" width="1920"/>
+                <img src="a808e382adc1fded661d97dcbc0915de63122ee1719bb21a75b732b7f4e2cf5d.png" title=" Given I want to schedule a new meet" width="1920"/>
+                <img src="a808e382adc1fded661d97dcbc0915de63122ee1719bb21a75b732b7f4e2cf5d.png" title=" Cristian opens the https://serenity.is/demo/" width="1920"/>
+                <img src="a808e382adc1fded661d97dcbc0915de63122ee1719bb21a75b732b7f4e2cf5d.png" title=" Given I want to schedule a new meet (completed)" width="1920"/>
+                <img src="a808e382adc1fded661d97dcbc0915de63122ee1719bb21a75b732b7f4e2cf5d.png" title=" When login to Startsharp go to schedule it
+| user | pass | unitName | unitOption | meetingName | meetingType | meetingNumber | meetingDate | initHour | endHour | location | person |
+| admin | serenity | Master | Acme Corp. | MyMeet | General | 12022 | 10/12/2022 | 14:00 | 15:00 | On Site | Aaron Taylor1 |" width="1920"/>
+                <img src="a808e382adc1fded661d97dcbc0915de63122ee1719bb21a75b732b7f4e2cf5d.png" title=" Cristian logins" width="1920"/>
+                <img src="a808e382adc1fded661d97dcbc0915de63122ee1719bb21a75b732b7f4e2cf5d.png" title=" Cristian enters 'admin' into input the user" width="1920"/>
+                <img src="a1ab5640423a8d424054ce24b3a29c007d217157718512da046c2c2edb2e445b.png" title=" Cristian enters 'admin' into input the user (completed)" width="1920"/>
+                <img src="88005e9022d2ff12f53f7764321c0e26bf1f30eac9dad009ea87345200041b08.png" title=" Cristian enters 'serenity' into input the password" width="1920"/>
+                <img src="b5b294153212cb077ddc8bbaa8e9c41a8c463e13efb913faecbf678b715867a4.png" title=" Cristian enters 'serenity' into input the password (completed)" width="1920"/>
+                <img src="b5b294153212cb077ddc8bbaa8e9c41a8c463e13efb913faecbf678b715867a4.png" title=" Cristian clicks on button to submit" width="1920"/>
+                <img src="d71eba9dae73d9bef8bce6a6d6011ffd6abfe30961ff2baf08d706eb5fc9efa3.png" title=" Cristian clicks on button to submit (completed)" width="1920"/>
+                <img src="d71eba9dae73d9bef8bce6a6d6011ffd6abfe30961ff2baf08d706eb5fc9efa3.png" title=" Cristian logins (completed)" width="1920"/>
+                <img src="d71eba9dae73d9bef8bce6a6d6011ffd6abfe30961ff2baf08d706eb5fc9efa3.png" title=" Cristian algo hace" width="1920"/>
+                <img src="ee992c64e631ac47da7610486f017183c91d34a86eaf5581cce8f3b74e7cc92b.png" title=" Cristian clicks on organization section" width="1920"/>
+                <img src="5016a640e1804c3f8069067a31ccf6fe11447a6396fc38de6e09e492fabbd2f3.png" title=" Cristian clicks on organization section (completed)" width="1920"/>
+                <img src="5016a640e1804c3f8069067a31ccf6fe11447a6396fc38de6e09e492fabbd2f3.png" title=" Cristian clicks on business section" width="1920"/>
+                <img src="25efa327f20eb89ca73d745554b032f48da3413f15f7939bb6cacf3fd36363c5.png" title=" Cristian clicks on business section (completed)" width="1920"/>
+                <img src="378fa83d2cfc6bd698b0125ff679ceb2d1d9852e6d6366cc8ba1ec8c350bba70.png" title=" Cristian clicks on new business unit" width="1920"/>
+                <img src="49db5c7d6c6090433ec38de9fda1a9ca5f01de9a35b1ad98ae2355c98d096f13.png" title=" Cristian clicks on new business unit (completed)" width="1920"/>
+                <img src="28e44a76c2af5d450f31aaba2705202436ed0d73f2ad132ddcc2169e2649c50c.png" title=" Cristian enters 'Master' into input the name business unit" width="1920"/>
+                <img src="d4338a12392aae433782965e169db7b89b8d851ffc2d1d5953a69d8c6c583faf.png" title=" Cristian enters 'Master' into input the name business unit (completed)" width="1920"/>
+                <img src="d4338a12392aae433782965e169db7b89b8d851ffc2d1d5953a69d8c6c583faf.png" title=" Cristian select in the list the option 'Acme Corp.'" width="1920"/>
+                <img src="d4338a12392aae433782965e169db7b89b8d851ffc2d1d5953a69d8c6c583faf.png" title=" Cristian clicks on select the parent" width="1920"/>
+                <img src="3a79429e11591da00c132512fedb9e826ea03db0ce5af8d5b9bd3e51bc45ec64.png" title=" Cristian clicks on select the parent (completed)" width="1920"/>
+                <img src="3a79429e11591da00c132512fedb9e826ea03db0ce5af8d5b9bd3e51bc45ec64.png" title=" Cristian clicks on select in the list the parent" width="1920"/>
+                <img src="f28193087fcf39f8bc1be1a0daf4c48f8bcd230533cffee2ba2ee633b40ae373.png" title=" Cristian clicks on select in the list the parent (completed)" width="1920"/>
+                <img src="f28193087fcf39f8bc1be1a0daf4c48f8bcd230533cffee2ba2ee633b40ae373.png" title=" Cristian select in the list the option 'Acme Corp.' (completed)" width="1920"/>
+                <img src="f28193087fcf39f8bc1be1a0daf4c48f8bcd230533cffee2ba2ee633b40ae373.png" title=" Cristian clicks on save the new unit" width="1920"/>
+                <img src="07308315aaff11435b82342d8e45948343b64e9729cc116ec186844a4ea44bd9.png" title=" Cristian clicks on save the new unit (completed)" width="1920"/>
+                <img src="07308315aaff11435b82342d8e45948343b64e9729cc116ec186844a4ea44bd9.png" title=" Cristian algo hace (completed)" width="1920"/>
+                <img src="07308315aaff11435b82342d8e45948343b64e9729cc116ec186844a4ea44bd9.png" title=" Cristian meeting" width="1920"/>
+                <img src="0acb43e5ea193112d8f73a3bdf388de4cfaeb41d329df7f6a9792f804c3b0294.png" title=" Cristian clicks on meeting section" width="1920"/>
+                <img src="9df52bfe970b2a574e09aaa2ec4b300624b30862fe59b7ff1413923844e9a067.png" title=" Cristian clicks on meeting section (completed)" width="1920"/>
+                <img src="9df52bfe970b2a574e09aaa2ec4b300624b30862fe59b7ff1413923844e9a067.png" title=" Cristian clicks on meeting meetings" width="1920"/>
+                <img src="a4aa87120e71e8318043c4f26d8e59fd576eae83352ff9c4f60eb27a8bc22a7e.png" title=" Cristian clicks on meeting meetings (completed)" width="1920"/>
+                <img src="e0e84b52ee4dadaba0a604c839ff70fe13c878b852081705d73afadb8feab5a2.png" title=" Cristian clicks on new business unit" width="1920"/>
+                <img src="36a29121681d5a416bb5266fcf92ab54bcb7a31da6f343482558aa6caa109f2d.png" title=" Cristian enters 'MyMeet' into put the meeting name" width="1920"/>
+                <img src="78f3b71ef4a6d45b9d93e7e86a262f616ed2eb9f7bffc75b9726450c049180fe.png" title=" Cristian enters 'MyMeet' into put the meeting name (completed)" width="1920"/>
+                <img src="78f3b71ef4a6d45b9d93e7e86a262f616ed2eb9f7bffc75b9726450c049180fe.png" title=" Cristian select in the list the option 'General'" width="1920"/>
+                <img src="78f3b71ef4a6d45b9d93e7e86a262f616ed2eb9f7bffc75b9726450c049180fe.png" title=" Cristian clicks on enable the list select meeting type" width="1920"/>
+                <img src="9405610752ed915837151632736990780fd983832a482a867974c2ad31d6c4ad.png" title=" Cristian clicks on enable the list select meeting type (completed)" width="1920"/>
+                <img src="9405610752ed915837151632736990780fd983832a482a867974c2ad31d6c4ad.png" title=" Cristian clicks on select in the list the parent" width="1920"/>
+                <img src="7751497288bbf38d086358bb057154269cac43bcf5c21f06ed86d8c50178ecec.png" title=" Cristian clicks on select in the list the parent (completed)" width="1920"/>
+                <img src="7751497288bbf38d086358bb057154269cac43bcf5c21f06ed86d8c50178ecec.png" title=" Cristian select in the list the option 'General' (completed)" width="1920"/>
+                <img src="7751497288bbf38d086358bb057154269cac43bcf5c21f06ed86d8c50178ecec.png" title=" Cristian enters '12022' into meeting number" width="1920"/>
+                <img src="cc68a260c10e4fc2ab476fc2a9ba7d7e70fbde808d162513329841d1dda44304.png" title=" Cristian enters '12022' into meeting number (completed)" width="1920"/>
+                <img src="cc68a260c10e4fc2ab476fc2a9ba7d7e70fbde808d162513329841d1dda44304.png" title=" Cristian enters '10/12/2022' into start date meeting" width="1920"/>
+                <img src="f386d165405e260912c62a5963dfa2dde6607e3332b0e6bb69522c657ee25f1f.png" title=" Cristian enters '10/12/2022' into start date meeting (completed)" width="1920"/>
+                <img src="f386d165405e260912c62a5963dfa2dde6607e3332b0e6bb69522c657ee25f1f.png" title=" Cristian selects 14:00 in select start hour" width="1920"/>
+                <img src="1345199763d585af93bd39d72e8415de92d4716687a82c55f056e6cf40a815b0.png" title=" Cristian selects 14:00 in select start hour (completed)" width="1920"/>
+                <img src="1345199763d585af93bd39d72e8415de92d4716687a82c55f056e6cf40a815b0.png" title=" Cristian enters '10/12/2022' into end date meeting" width="1920"/>
+                <img src="763981868a3f40dd3ecd4e292ffa477962b2b9ed06ca868f93ce1f69c5a0db0d.png" title=" Cristian enters '10/12/2022' into end date meeting (completed)" width="1920"/>
+                <img src="763981868a3f40dd3ecd4e292ffa477962b2b9ed06ca868f93ce1f69c5a0db0d.png" title=" Cristian selects 15:00 in select start hour" width="1920"/>
+                <img src="21a8fdf90f1b93df1420f43fb2316b10ade5fa2c4b335aa63175c16c1e624279.png" title=" Cristian selects 15:00 in select start hour (completed)" width="1920"/>
+                <img src="3f9b386ee86087aabaf4934256925b586e0ccee9c6f8f05b82698d2206ccf72d.png" title=" Cristian select in the list the option 'On Site'" width="1920"/>
+                <img src="3f9b386ee86087aabaf4934256925b586e0ccee9c6f8f05b82698d2206ccf72d.png" title=" Cristian clicks on location" width="1920"/>
+                <img src="72b1675f1423fa7b01d3fdf74cb70261bc3122c6066330e16fe75ae0619c8948.png" title=" Cristian clicks on location (completed)" width="1920"/>
+                <img src="6f4ba9049ecc8656fcad15862be60cc5b5fc47c53134836bf838bcc7489116ce.png" title=" Cristian clicks on select in the list the parent" width="1920"/>
+                <img src="79edd8928af2b964ed8a7cff1d323dd6c6d306e416b82e0ac69fca346e097ea2.png" title=" Cristian clicks on select in the list the parent (completed)" width="1920"/>
+                <img src="79edd8928af2b964ed8a7cff1d323dd6c6d306e416b82e0ac69fca346e097ea2.png" title=" Cristian select in the list the option 'On Site' (completed)" width="1920"/>
+                <img src="79edd8928af2b964ed8a7cff1d323dd6c6d306e416b82e0ac69fca346e097ea2.png" title=" Cristian select in the list the option 'Master'" width="1920"/>
+                <img src="79edd8928af2b964ed8a7cff1d323dd6c6d306e416b82e0ac69fca346e097ea2.png" title=" Cristian clicks on location" width="1920"/>
+                <img src="ce51a0a000ee19b4cee04bd72bb2d72e0461e843131c3f256fa6c8b1d878282c.png" title=" Cristian clicks on location (completed)" width="1920"/>
+                <img src="ce51a0a000ee19b4cee04bd72bb2d72e0461e843131c3f256fa6c8b1d878282c.png" title=" Cristian clicks on select in the list the parent" width="1920"/>
+                <img src="a468cae4cd98ef8ed067031db656bf75a2ffd601be384a215f64abbd22ead6f2.png" title=" Cristian clicks on select in the list the parent (completed)" width="1920"/>
+                <img src="a468cae4cd98ef8ed067031db656bf75a2ffd601be384a215f64abbd22ead6f2.png" title=" Cristian select in the list the option 'Master' (completed)" width="1920"/>
+                <img src="a468cae4cd98ef8ed067031db656bf75a2ffd601be384a215f64abbd22ead6f2.png" title=" Cristian select in the list the option 'Aaron Taylor1'" width="1920"/>
+                <img src="a468cae4cd98ef8ed067031db656bf75a2ffd601be384a215f64abbd22ead6f2.png" title=" Cristian clicks on location" width="1920"/>
+                <img src="c0948256c3630035134e0b8de3802e41f1eebf3aa4800a6e6f35cb66cd739ef8.png" title=" Cristian clicks on location (completed)" width="1920"/>
+                <img src="c0948256c3630035134e0b8de3802e41f1eebf3aa4800a6e6f35cb66cd739ef8.png" title=" Cristian clicks on select in the list the parent" width="1920"/>
+                <img src="97009f19547948c65487b2853aebb030b9d3d02211976fd57aaf6e6a6c6c7d51.png" title=" Cristian clicks on select in the list the parent (completed): <span class='failing-color'>FAILURE</span>" width="1920"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.6.0</span>
+</div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="2" failures="0" name="new meeting" skipped="0" tests="2" time="14.02" timestamp="2023-11-09 12:08:04"><testcase name="schedule a meet"><error message="Could not instantiate new WebDriver instance of type class org.openqa.selenium.chrome.ChromeDriver (session not created: This version of ChromeDriver only supports Chrome version 117&#10;Current browser version is 119.0.6045.123 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'CHBOG6ZC3KL3', ip: '192.168.1.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'&#10;Driver info: driver.version: ProvideNewDriver&#10;remote stacktrace: &#9;GetHandleVerifier [0x00007FF64CA97892+54818]&#10;&#9;(No symbol) [0x00007FF64CA06AC2]&#10;&#9;(No symbol) [0x00007FF64C8BDA3B]&#10;&#9;(No symbol) [0x00007FF64C8F0972]&#10;&#9;(No symbol) [0x00007FF64C8EFDCE]&#10;&#9;(No symbol) [0x00007FF64C8EAA4B]&#10;&#9;(No symbol) [0x00007FF64C8E802E]&#10;&#9;(No symbol) [0x00007FF64C9267FB]&#10;&#9;(No symbol) [0x00007FF64C91E883]&#10;&#9;(No symbol) [0x00007FF64C8F3691]&#10;&#9;(No symbol) [0x00007FF64C8F48D4]&#10;&#9;GetHandleVerifier [0x00007FF64CDFB992+3610402]&#10;&#9;GetHandleVerifier [0x00007FF64CE51860+3962352]&#10;&#9;GetHandleVerifier [0x00007FF64CE49D4F+3930847]&#10;&#9;GetHandleVerifier [0x00007FF64CB33646+693206]&#10;&#9;(No symbol) [0x00007FF64CA11628]&#10;&#9;(No symbol) [0x00007FF64CA0D934]&#10;&#9;(No symbol) [0x00007FF64CA0DA62]&#10;&#9;(No symbol) [0x00007FF64C9FE113]&#10;&#9;BaseThreadInitThunk [0x00007FFC67A87034+20]&#10;&#9;RtlUserThreadStart [0x00007FFC6929CEC1+33]&#10;). See below for more details." type="net.thucydides.core.webdriver.DriverConfigurationError">Could not instantiate new WebDriver instance of type class org.openqa.selenium.chrome.ChromeDriver (session not created: This version of ChromeDriver only supports Chrome version 117
+Current browser version is 119.0.6045.123 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CHBOG6ZC3KL3', ip: '192.168.1.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: driver.version: ProvideNewDriver
+remote stacktrace: 	GetHandleVerifier [0x00007FF64CA97892+54818]
+	(No symbol) [0x00007FF64CA06AC2]
+	(No symbol) [0x00007FF64C8BDA3B]
+	(No symbol) [0x00007FF64C8F0972]
+	(No symbol) [0x00007FF64C8EFDCE]
+	(No symbol) [0x00007FF64C8EAA4B]
+	(No symbol) [0x00007FF64C8E802E]
+	(No symbol) [0x00007FF64C9267FB]
+	(No symbol) [0x00007FF64C91E883]
+	(No symbol) [0x00007FF64C8F3691]
+	(No symbol) [0x00007FF64C8F48D4]
+	GetHandleVerifier [0x00007FF64CDFB992+3610402]
+	GetHandleVerifier [0x00007FF64CE51860+3962352]
+	GetHandleVerifier [0x00007FF64CE49D4F+3930847]
+	GetHandleVerifier [0x00007FF64CB33646+693206]
+	(No symbol) [0x00007FF64CA11628]
+	(No symbol) [0x00007FF64CA0D934]
+	(No symbol) [0x00007FF64CA0DA62]
+	(No symbol) [0x00007FF64C9FE113]
+	BaseThreadInitThunk [0x00007FFC67A87034+20]
+	RtlUserThreadStart [0x00007FFC6929CEC1+33]
+). See below for more details.</error><system-err>Could not instantiate new WebDriver instance of type class org.openqa.selenium.chrome.ChromeDriver (session not created: This version of ChromeDriver only supports Chrome version 117
+Current browser version is 119.0.6045.123 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CHBOG6ZC3KL3', ip: '192.168.1.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: driver.version: ProvideNewDriver
+remote stacktrace: 	GetHandleVerifier [0x00007FF64CA97892+54818]
+	(No symbol) [0x00007FF64CA06AC2]
+	(No symbol) [0x00007FF64C8BDA3B]
+	(No symbol) [0x00007FF64C8F0972]
+	(No symbol) [0x00007FF64C8EFDCE]
+	(No symbol) [0x00007FF64C8EAA4B]
+	(No symbol) [0x00007FF64C8E802E]
+	(No symbol) [0x00007FF64C9267FB]
+	(No symbol) [0x00007FF64C91E883]
+	(No symbol) [0x00007FF64C8F3691]
+	(No symbol) [0x00007FF64C8F48D4]
+	GetHandleVerifier [0x00007FF64CDFB992+3610402]
+	GetHandleVerifier [0x00007FF64CE51860+3962352]
+	GetHandleVerifier [0x00007FF64CE49D4F+3930847]
+	GetHandleVerifier [0x00007FF64CB33646+693206]
+	(No symbol) [0x00007FF64CA11628]
+	(No symbol) [0x00007FF64CA0D934]
+	(No symbol) [0x00007FF64CA0DA62]
+	(No symbol) [0x00007FF64C9FE113]
+	BaseThreadInitThunk [0x00007FFC67A87034+20]
+	RtlUserThreadStart [0x00007FFC6929CEC1+33]
+). See below for more details.&#13;
+co.com.choucair.certificacion.serenityis.stepdefinitions.StarSharpStepDefinitions.iWantToScheduleANewMeet(StarSharpStepDefinitions.java:33)&#13;
+io.cucumber.java.Invoker.doInvoke(Invoker.java:66)&#13;
+io.cucumber.java.Invoker.invoke(Invoker.java:24)&#13;
+io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)&#13;
+io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)&#13;
+io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)&#13;
+io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)&#13;
+io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)&#13;
+io.cucumber.core.runner.TestStep.run(TestStep.java:64)&#13;
+io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)&#13;
+io.cucumber.core.runner.TestCase.run(TestCase.java:104)&#13;
+io.cucumber.core.runner.Runner.runPickle(Runner.java:73)&#13;
+io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)&#13;
+io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)&#13;
+io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:258)&#13;
+io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:57)&#13;
+worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)&#13;
+worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)&#13;
+</system-err></testcase></testsuite>
